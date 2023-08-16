@@ -11,6 +11,10 @@
 		B417DAC62A8860A500A05C95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B417DAC52A8860A500A05C95 /* ContentView.swift */; };
 		B417DAC82A8860A600A05C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B417DAC72A8860A600A05C95 /* Assets.xcassets */; };
 		B417DACB2A8860A600A05C95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B417DACA2A8860A600A05C95 /* Preview Assets.xcassets */; };
+		B417DAD52A88633A00A05C95 /* OnboardingAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B417DAD42A88633A00A05C95 /* OnboardingAppView.swift */; };
+		B42394152A8C0A0D007BD9F1 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42394142A8C0A0D007BD9F1 /* SignInView.swift */; };
+		B4CA4B742A8B10CD00592575 /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA4B732A8B10CD00592575 /* OnboardingItem.swift */; };
+		B4CA4B762A8B22BF00592575 /* OnboardingNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA4B752A8B22BF00592575 /* OnboardingNavigationButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		B417DAC52A8860A500A05C95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B417DAC72A8860A600A05C95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B417DACA2A8860A600A05C95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B417DAD42A88633A00A05C95 /* OnboardingAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAppView.swift; sourceTree = "<group>"; };
+		B42394142A8C0A0D007BD9F1 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		B4CA4B732A8B10CD00592575 /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
+		B4CA4B752A8B22BF00592575 /* OnboardingNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNavigationButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,10 @@
 		B417DAC22A8860A500A05C95 /* AppFitnexUsingSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B4CA4B722A8B0F3300592575 /* ViewModels */,
+				B4CA4B712A8B0F1E00592575 /* Modelos */,
+				B417DAD12A88620300A05C95 /* Views */,
 				B417DAC32A8860A500A05C95 /* AppFitnexUsingSwiftUIApp.swift */,
-				B417DAC52A8860A500A05C95 /* ContentView.swift */,
 				B417DAC72A8860A600A05C95 /* Assets.xcassets */,
 				B417DAC92A8860A600A05C95 /* Preview Content */,
 			);
@@ -65,6 +75,48 @@
 				B417DACA2A8860A600A05C95 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B417DAD12A88620300A05C95 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B42394122A8C0761007BD9F1 /* OnboardingView */,
+				B42394132A8C09CF007BD9F1 /* SignInView */,
+				B417DAC52A8860A500A05C95 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B42394122A8C0761007BD9F1 /* OnboardingView */ = {
+			isa = PBXGroup;
+			children = (
+				B4CA4B752A8B22BF00592575 /* OnboardingNavigationButton.swift */,
+				B417DAD42A88633A00A05C95 /* OnboardingAppView.swift */,
+			);
+			path = OnboardingView;
+			sourceTree = "<group>";
+		};
+		B42394132A8C09CF007BD9F1 /* SignInView */ = {
+			isa = PBXGroup;
+			children = (
+				B42394142A8C0A0D007BD9F1 /* SignInView.swift */,
+			);
+			path = SignInView;
+			sourceTree = "<group>";
+		};
+		B4CA4B712A8B0F1E00592575 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				B4CA4B732A8B10CD00592575 /* OnboardingItem.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
+		B4CA4B722A8B0F3300592575 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42394152A8C0A0D007BD9F1 /* SignInView.swift in Sources */,
 				B417DAC62A8860A500A05C95 /* ContentView.swift in Sources */,
+				B4CA4B742A8B10CD00592575 /* OnboardingItem.swift in Sources */,
+				B417DAD52A88633A00A05C95 /* OnboardingAppView.swift in Sources */,
+				B4CA4B762A8B22BF00592575 /* OnboardingNavigationButton.swift in Sources */,
 				B417DAC42A8860A500A05C95 /* AppFitnexUsingSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
