@@ -11,10 +11,15 @@
 		B417DAC62A8860A500A05C95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B417DAC52A8860A500A05C95 /* ContentView.swift */; };
 		B417DAC82A8860A600A05C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B417DAC72A8860A600A05C95 /* Assets.xcassets */; };
 		B417DACB2A8860A600A05C95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B417DACA2A8860A600A05C95 /* Preview Assets.xcassets */; };
-		B417DAD52A88633A00A05C95 /* OnboardingAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B417DAD42A88633A00A05C95 /* OnboardingAppView.swift */; };
+		B417DAD52A88633A00A05C95 /* OnboardingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B417DAD42A88633A00A05C95 /* OnboardingItemView.swift */; };
 		B42394152A8C0A0D007BD9F1 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42394142A8C0A0D007BD9F1 /* SignInView.swift */; };
 		B4CA4B742A8B10CD00592575 /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA4B732A8B10CD00592575 /* OnboardingItem.swift */; };
 		B4CA4B762A8B22BF00592575 /* OnboardingNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA4B752A8B22BF00592575 /* OnboardingNavigationButton.swift */; };
+		B4F909172A8D973A00AC1B2F /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F909162A8D973A00AC1B2F /* AppStateManager.swift */; };
+		B4F9091A2A8D983A00AC1B2F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F909192A8D983A00AC1B2F /* AppState.swift */; };
+		B4F9091C2A8D9AD000AC1B2F /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9091B2A8D9AD000AC1B2F /* OnboardingManager.swift */; };
+		B4F9091E2A8D9CE500AC1B2F /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9091D2A8D9CE500AC1B2F /* AuthManager.swift */; };
+		B4F909202A8DAEAF00AC1B2F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9091F2A8DAEAF00AC1B2F /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,10 +28,15 @@
 		B417DAC52A8860A500A05C95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B417DAC72A8860A600A05C95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B417DACA2A8860A600A05C95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B417DAD42A88633A00A05C95 /* OnboardingAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAppView.swift; sourceTree = "<group>"; };
+		B417DAD42A88633A00A05C95 /* OnboardingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItemView.swift; sourceTree = "<group>"; };
 		B42394142A8C0A0D007BD9F1 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		B4CA4B732A8B10CD00592575 /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
 		B4CA4B752A8B22BF00592575 /* OnboardingNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNavigationButton.swift; sourceTree = "<group>"; };
+		B4F909162A8D973A00AC1B2F /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
+		B4F909192A8D983A00AC1B2F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B4F9091B2A8D9AD000AC1B2F /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
+		B4F9091D2A8D9CE500AC1B2F /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		B4F9091F2A8DAEAF00AC1B2F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,8 @@
 		B417DAC22A8860A500A05C95 /* AppFitnexUsingSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B4F909182A8D97F000AC1B2F /* Enums */,
+				B4F909152A8D970B00AC1B2F /* Managers */,
 				B4CA4B722A8B0F3300592575 /* ViewModels */,
 				B4CA4B712A8B0F1E00592575 /* Modelos */,
 				B417DAD12A88620300A05C95 /* Views */,
@@ -91,7 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				B4CA4B752A8B22BF00592575 /* OnboardingNavigationButton.swift */,
-				B417DAD42A88633A00A05C95 /* OnboardingAppView.swift */,
+				B417DAD42A88633A00A05C95 /* OnboardingItemView.swift */,
+				B4F9091F2A8DAEAF00AC1B2F /* OnboardingView.swift */,
 			);
 			path = OnboardingView;
 			sourceTree = "<group>";
@@ -117,6 +130,24 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B4F909152A8D970B00AC1B2F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B4F909162A8D973A00AC1B2F /* AppStateManager.swift */,
+				B4F9091B2A8D9AD000AC1B2F /* OnboardingManager.swift */,
+				B4F9091D2A8D9CE500AC1B2F /* AuthManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B4F909182A8D97F000AC1B2F /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				B4F909192A8D983A00AC1B2F /* AppState.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,11 +221,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B42394152A8C0A0D007BD9F1 /* SignInView.swift in Sources */,
+				B4F909172A8D973A00AC1B2F /* AppStateManager.swift in Sources */,
 				B417DAC62A8860A500A05C95 /* ContentView.swift in Sources */,
+				B4F9091A2A8D983A00AC1B2F /* AppState.swift in Sources */,
 				B4CA4B742A8B10CD00592575 /* OnboardingItem.swift in Sources */,
-				B417DAD52A88633A00A05C95 /* OnboardingAppView.swift in Sources */,
+				B417DAD52A88633A00A05C95 /* OnboardingItemView.swift in Sources */,
+				B4F9091C2A8D9AD000AC1B2F /* OnboardingManager.swift in Sources */,
 				B4CA4B762A8B22BF00592575 /* OnboardingNavigationButton.swift in Sources */,
 				B417DAC42A8860A500A05C95 /* AppFitnexUsingSwiftUIApp.swift in Sources */,
+				B4F9091E2A8D9CE500AC1B2F /* AuthManager.swift in Sources */,
+				B4F909202A8DAEAF00AC1B2F /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

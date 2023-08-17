@@ -3,22 +3,4 @@
    uuid = "63017B17-88AF-44F3-A670-69BDF9654C94"
    type = "1"
    version = "2.0">
-   <Breakpoints>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5F0B5289-D35C-4926-B982-13D132DC2CBB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppFitnexUsingSwiftUI/Views/SignInView/SignInView.swift"
-            startingColumnNumber = "14"
-            endingColumnNumber = "14"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "body"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-   </Breakpoints>
 </Bucket>

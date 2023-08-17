@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OnboardingAppView: View {
+struct OnboardingItemView: View {
     
     var text: String
     var image: UIImage
@@ -33,6 +33,6 @@ struct OnboardingAppView: View {
 
 struct OnboardingAppView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingAppView(text: "hola", image: UIImage(named: "imageOnboardingExample")!)
+        OnboardingItemView(text: "hola", image: UIImage(named: "imageOnboardingExample")!)
     }
 }
