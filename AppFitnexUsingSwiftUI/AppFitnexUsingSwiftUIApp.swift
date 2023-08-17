@@ -12,6 +12,7 @@ struct AppFitnexUsingSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(AppStateManger())
         }
     }
 }
