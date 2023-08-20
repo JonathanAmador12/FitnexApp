@@ -10,6 +10,7 @@ import Foundation
 class AppStateManger: ObservableObject {
     
     @Published var appState: AppState
+    
     private var onboardingManager: OnbaordingManager
     private var authManager: AuthManager
     
@@ -32,4 +33,9 @@ class AppStateManger: ObservableObject {
     func finishOnboarding() -> Void {
         appState = .signIn
     }
+    
+    func signUp() -> Void {
+        appState = .signUp
+    }
+    
 }

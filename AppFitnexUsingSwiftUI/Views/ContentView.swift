@@ -14,8 +14,10 @@ struct ContentView: View {
     var body: some View {
         if appStateManager.appState == .onboarding {
             OnboardingView()
-        } else {
+        } else if appStateManager.appState == .signIn {
             SignInView()
+        } else if appStateManager.appState == .signUp {
+            SignUpView()
         }
         
     }

@@ -13,6 +13,8 @@
 		B417DACB2A8860A600A05C95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B417DACA2A8860A600A05C95 /* Preview Assets.xcassets */; };
 		B417DAD52A88633A00A05C95 /* OnboardingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B417DAD42A88633A00A05C95 /* OnboardingItemView.swift */; };
 		B42394152A8C0A0D007BD9F1 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42394142A8C0A0D007BD9F1 /* SignInView.swift */; };
+		B46AAFFA2A8FDEDB006D32A8 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AAFF92A8FDEDB006D32A8 /* ButtonView.swift */; };
+		B48A6ED02A8F3223003DCC3D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48A6ECF2A8F3223003DCC3D /* SignUpView.swift */; };
 		B4CA4B742A8B10CD00592575 /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA4B732A8B10CD00592575 /* OnboardingItem.swift */; };
 		B4CA4B762A8B22BF00592575 /* OnboardingNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA4B752A8B22BF00592575 /* OnboardingNavigationButton.swift */; };
 		B4F909172A8D973A00AC1B2F /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F909162A8D973A00AC1B2F /* AppStateManager.swift */; };
@@ -30,6 +32,8 @@
 		B417DACA2A8860A600A05C95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B417DAD42A88633A00A05C95 /* OnboardingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItemView.swift; sourceTree = "<group>"; };
 		B42394142A8C0A0D007BD9F1 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		B46AAFF92A8FDEDB006D32A8 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		B48A6ECF2A8F3223003DCC3D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		B4CA4B732A8B10CD00592575 /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
 		B4CA4B752A8B22BF00592575 /* OnboardingNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNavigationButton.swift; sourceTree = "<group>"; };
 		B4F909162A8D973A00AC1B2F /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 		B417DAD12A88620300A05C95 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B46AAFF82A8FDEBA006D32A8 /* Buttons */,
+				B48A6ECE2A8F3182003DCC3D /* SignUpView */,
 				B42394122A8C0761007BD9F1 /* OnboardingView */,
 				B42394132A8C09CF007BD9F1 /* SignInView */,
 				B417DAC52A8860A500A05C95 /* ContentView.swift */,
@@ -115,6 +121,22 @@
 				B42394142A8C0A0D007BD9F1 /* SignInView.swift */,
 			);
 			path = SignInView;
+			sourceTree = "<group>";
+		};
+		B46AAFF82A8FDEBA006D32A8 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				B46AAFF92A8FDEDB006D32A8 /* ButtonView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		B48A6ECE2A8F3182003DCC3D /* SignUpView */ = {
+			isa = PBXGroup;
+			children = (
+				B48A6ECF2A8F3223003DCC3D /* SignUpView.swift */,
+			);
+			path = SignUpView;
 			sourceTree = "<group>";
 		};
 		B4CA4B712A8B0F1E00592575 /* Modelos */ = {
@@ -222,8 +244,10 @@
 			files = (
 				B42394152A8C0A0D007BD9F1 /* SignInView.swift in Sources */,
 				B4F909172A8D973A00AC1B2F /* AppStateManager.swift in Sources */,
+				B46AAFFA2A8FDEDB006D32A8 /* ButtonView.swift in Sources */,
 				B417DAC62A8860A500A05C95 /* ContentView.swift in Sources */,
 				B4F9091A2A8D983A00AC1B2F /* AppState.swift in Sources */,
+				B48A6ED02A8F3223003DCC3D /* SignUpView.swift in Sources */,
 				B4CA4B742A8B10CD00592575 /* OnboardingItem.swift in Sources */,
 				B417DAD52A88633A00A05C95 /* OnboardingItemView.swift in Sources */,
 				B4F9091C2A8D9AD000AC1B2F /* OnboardingManager.swift in Sources */,
