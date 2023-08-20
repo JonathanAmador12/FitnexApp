@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SignInView: View {
+    
+    @EnvironmentObject var appStateManager: AppStateManger
+    
     var body: some View {
         GeometryReader { geometry in
             VStack {
@@ -94,7 +97,7 @@ struct SignInView: View {
                         Text("Don't have a account ?")
                             .frame(width: 200)
                         Button {
-                            //
+                            appStateManager.signUp()
                         } label: {
                             Text("Sign Up")
                                 .frame(width: 100)
