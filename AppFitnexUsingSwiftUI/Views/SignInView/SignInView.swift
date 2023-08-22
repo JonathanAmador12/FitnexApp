@@ -7,9 +7,27 @@
 
 import SwiftUI
 
+
+struct SignInMethod: Hashable {
+    var name: String
+    var image: String
+    var imageType: SignInMethodImageType
+}
+
+enum SignInMethodImageType {
+    case asset
+    case sf
+}
+
 struct SignInView: View {
     
     @EnvironmentObject var appStateManager: AppStateManger
+    
+    var signInMethods: [SignInMethod] = [
+        SignInMethod(name: "Continue with Facebook", image: "face", imageType: .asset),
+        SignInMethod(name: "Continue with Google", image: "google", imageType: .asset),
+        SignInMethod(name: "Continue with Apple", image: "apple.logo", imageType: .sf),
+    ]
     
     var body: some View {
         GeometryReader { geometry in
@@ -23,53 +41,35 @@ struct SignInView: View {
                 .frame(width: geometry.size.width / 3, height: geometry.size.height / 3)
                 
                 VStack(spacing: 20) {
-                    Button {
-                        //
-                    } label: {
-                        Image("face")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 45, height: 45)
-                        Text("Continue with FaceBook")
-                    }
-                    .foregroundColor(.black)
-                    .frame(width: 324, height: 51)
-                    .background(.white, ignoresSafeAreaEdges: [])
-                    .clipShape(RoundedRectangle(cornerRadius: 25))
-                    .background {
-                        RoundedRectangle(cornerRadius: 25)
-                            .stroke(Color.purple, lineWidth: 2)
-                    }
-                    Button {
-                        //
-                    } label: {
-                        Image("google")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 45, height: 45)
-                        Text("Continue with Google")
-                    }
-                    .foregroundColor(.black)
-                    .frame(width: 324, height: 51)
-                    .background(.white, ignoresSafeAreaEdges: [])
-                    .clipShape(RoundedRectangle(cornerRadius: 25))
-                    .background {
-                        RoundedRectangle(cornerRadius: 25)
-                            .stroke(Color.purple, lineWidth: 2)
-                    }
-                    Button {
-                        //
-                    } label: {
-                        Image(systemName: "apple.logo")
-                        Text("Continue with Apple")
-                    }
-                    .foregroundColor(.black)
-                    .frame(width: 324, height: 51)
-                    .background(.white, ignoresSafeAreaEdges: [])
-                    .clipShape(RoundedRectangle(cornerRadius: 25))
-                    .background {
-                        RoundedRectangle(cornerRadius: 25)
-                            .stroke(Color.purple, lineWidth: 2)
+                    
+                    ForEach(signInMethods, id: \.self) { signInMethod in
+                        Button {
+                            //
+                        } label: {
+                            if signInMethod.imageType == .asset {
+                                HStack(spacing: 30) {
+                                    Image(signInMethod.image)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 45, height: 45)
+                                    Text(signInMethod.name)
+                                }
+                            } else {
+                                HStack(spacing: 30) {
+                                    Image(systemName: signInMethod.image)
+                                    Text(signInMethod.name)
+                                }
+                            }
+                        }
+                        .foregroundColor(.black)
+                        .frame(width: 324, height: 51)
+                        .background(.white, ignoresSafeAreaEdges: [])
+                        .clipShape(RoundedRectangle(cornerRadius: 25))
+                        .background {
+                            RoundedRectangle(cornerRadius: 25)
+                                .stroke(Color.purple, lineWidth: 2)
+                        }
+
                     }
                 }
                 .frame(width: geometry.size.width / 3, height: geometry.size.height / 3)
