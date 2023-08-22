@@ -14,6 +14,9 @@ struct SignUpView: View {
     @State var confirmPassword: String = ""
     @State var isChecked: Bool = false
     
+    // Text Field Active
+    @State var activeField: ActiveFieldSignUp?
+    
     var body: some View {
         VStack {
             
@@ -31,20 +34,26 @@ struct SignUpView: View {
                     VStack(spacing: 18) {
                         TextField("\(Image(systemName: "envelope.fill"))   Email", text: $email)
                             .frame(width: 300, height: 40)
-                            .background(Color.gray)
-                            .opacity(0.4)
+                            .background(activeField == .textField ?  Color("selectedField"): Color("ColorShadow'sFields"))
+                            .onTapGesture {
+                                activeField = .textField
+                            }
                             .foregroundColor(.black)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
                         SecureField("\(Image(systemName: "lock.fill"))   Password", text: $password)
                             .frame(width: 300, height: 40)
-                            .background(Color.gray)
-                            .opacity(0.4)
+                            .background(activeField == .secureFieldPassword ? Color("selectedField") : Color("ColorShadow'sFields"))
+                            .onTapGesture {
+                                activeField = .secureFieldPassword
+                            }
                             .foregroundColor(.black)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
                         SecureField("\(Image(systemName: "lock.fill"))   ComfirmPassword", text: $confirmPassword)
                             .frame(width: 300, height: 40)
-                            .background(Color.gray)
-                            .opacity(0.4)
+                            .background(activeField == .secureFieldConfirPassword ?  Color("selectedField") : Color("ColorShadow'sFields"))
+                            .onTapGesture {
+                                activeField = .secureFieldConfirPassword
+                            }
                             .foregroundColor(.black)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
                         
