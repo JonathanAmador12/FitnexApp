@@ -8,6 +8,6 @@
 import Foundation
 
 
-enum ActiveFieldSignUp {
-    case textField, secureFieldPassword, secureFieldConfirPassword
+enum SignUpFormField {
+    case email, password, passwordConfirmation
 }
