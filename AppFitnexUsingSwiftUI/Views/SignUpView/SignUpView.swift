@@ -9,13 +9,7 @@ import SwiftUI
 
 struct SignUpView: View {
     
-    @State var email: String = ""
-    @State var password: String = ""
-    @State var confirmPassword: String = ""
-    @State var isChecked: Bool = false
-    
-    // Text Field Active
-    @State var activeField: ActiveFieldSignUp?
+    @StateObject var signUpViewModel = SignUpViewModel()
     
     var body: some View {
         VStack {
@@ -32,34 +26,65 @@ struct SignUpView: View {
                     .frame(width: geometry.size.width / 3, height: geometry.size.height / 3)
                     
                     VStack(spacing: 18) {
-                        TextField("\(Image(systemName: "envelope.fill"))   Email", text: $email)
-                            .frame(width: 300, height: 40)
-                            .background(activeField == .textField ?  Color("selectedField"): Color("ColorShadow'sFields"))
-                            .onTapGesture {
-                                activeField = .textField
+                        
+                        HStack(spacing: 20) {
+                            Image(systemName: "envelope.fill")
+                            TextField("Email", text: $signUpViewModel.email)
+                                .onTapGesture {
+                                    signUpViewModel.activeField = .email
+                                }
+                        }
+                        .foregroundColor(signUpViewModel.isEmailActiveOrFill() ? .black : .gray)
+                        .frame(width: 300, height: 40)
+                        .background(signUpViewModel.isActiveEmail() ?  Color("selectedField"): Color("ColorShadow'sFields"))
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                            
+                            
+                        HStack(spacing: 20) {
+                            Image(systemName: "lock.fill")
+                            TextField("Password", text: $signUpViewModel.password)
+                                .onTapGesture {
+                                    signUpViewModel.activeField = .password
+                                }
+                            Button {
+                                //
+                            } label: {
+                                Image(systemName: "eye.slash.fill")
                             }
-                            .foregroundColor(.black)
-                            .clipShape(RoundedRectangle(cornerRadius: 8))
-                        SecureField("\(Image(systemName: "lock.fill"))   Password", text: $password)
-                            .frame(width: 300, height: 40)
-                            .background(activeField == .secureFieldPassword ? Color("selectedField") : Color("ColorShadow'sFields"))
-                            .onTapGesture {
-                                activeField = .secureFieldPassword
-                            }
-                            .foregroundColor(.black)
-                            .clipShape(RoundedRectangle(cornerRadius: 8))
-                        SecureField("\(Image(systemName: "lock.fill"))   ComfirmPassword", text: $confirmPassword)
-                            .frame(width: 300, height: 40)
-                            .background(activeField == .secureFieldConfirPassword ?  Color("selectedField") : Color("ColorShadow'sFields"))
-                            .onTapGesture {
-                                activeField = .secureFieldConfirPassword
-                            }
-                            .foregroundColor(.black)
-                            .clipShape(RoundedRectangle(cornerRadius: 8))
+
+                        }
+                        .foregroundColor(signUpViewModel.isPasswordActiveOrFill() ? .black : .gray)
+                        .frame(width: 300, height: 40)
+                        .background(signUpViewModel.isActivePassword() ? Color("selectedField") : Color("ColorShadow'sFields"))
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
                         
                         HStack {
-                            Image(systemName: "square")
-                                .foregroundColor(.purple)
+                            Image(systemName: "lock.fill")
+                            TextField("Confirm Password", text: $signUpViewModel.confirmPassword)
+                                .onTapGesture {
+                                    signUpViewModel.activeField = .passwordConfirmation
+                                }
+                            
+                            Button {
+                                //
+                            } label: {
+                                Image(systemName: "eye.slash.fill")
+                            }
+
+                        }
+                        .foregroundColor(signUpViewModel.isPasswordConfirmationActiveOrFill() ? .black : .gray)
+                        .frame(width: 300, height: 40)
+                        .background(signUpViewModel.isActivePasswordConfirmation() ? Color("selectedField") : Color("ColorShadow'sFields"))
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                        
+                        HStack {
+                            Button {
+                                //
+                            } label: {
+                                Image(systemName: "square")
+                                    .foregroundColor(.purple)
+                            }
+
                             Text("Remember me")
                                 .frame(width: 150)
                         }
@@ -124,6 +149,6 @@ struct SignUpView: View {
 
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView(email: "", password: "", confirmPassword: "")
+        SignUpView()
     }
 }
