@@ -6,10 +6,20 @@
 //
 
 import SwiftUI
+import Combine
 
 struct SignUpView: View {
     
     @StateObject var signUpViewModel = SignUpViewModel()
+    @State var isPasswordVisible: Bool = false
+    @State var isConfirmationPasswordVisible: Bool = false
+    @State var rememberPassword: Bool = false
+    
+    // erroneous message variable
+    @State var emailMessageError: String?
+    @State var passwordMessageError: String?
+    @State var confirmationPasswordError: String?
+    
     
     var body: some View {
         VStack {
@@ -27,6 +37,7 @@ struct SignUpView: View {
                     
                     VStack(spacing: 18) {
                         
+                        // Email View
                         HStack(spacing: 20) {
                             Image(systemName: "envelope.fill")
                             TextField("Email", text: $signUpViewModel.email)
@@ -38,18 +49,31 @@ struct SignUpView: View {
                         .frame(width: 300, height: 40)
                         .background(signUpViewModel.isActiveEmail() ?  Color("selectedField"): Color("ColorShadow'sFields"))
                         .clipShape(RoundedRectangle(cornerRadius: 8))
+                        
+                        if let emailError = emailMessageError {
+                            Text(emailError)
+                                .foregroundColor(.red)
+                                .opacity(0.6)
+                                .frame(width: 300, height: 20, alignment: .leading)
+                                .background(.white)
+                                .clipShape(RoundedRectangle(cornerRadius: 8))
+                        }
                             
-                            
+                        // Password View
                         HStack(spacing: 20) {
                             Image(systemName: "lock.fill")
-                            TextField("Password", text: $signUpViewModel.password)
+                            TextInputToggleView(securityField: $signUpViewModel.password, title: "Password", isTextField: isPasswordVisible)
                                 .onTapGesture {
                                     signUpViewModel.activeField = .password
                                 }
                             Button {
-                                //
+                                isPasswordVisible.toggle()
                             } label: {
-                                Image(systemName: "eye.slash.fill")
+                                if isPasswordVisible == false {
+                                    Image(systemName: "eye.slash.fill")
+                                } else {
+                                    Image(systemName: "eye.fill")
+                                }
                             }
 
                         }
@@ -58,17 +82,28 @@ struct SignUpView: View {
                         .background(signUpViewModel.isActivePassword() ? Color("selectedField") : Color("ColorShadow'sFields"))
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                         
-                        HStack {
+                        if let passwordMessage = passwordMessageError {
+                            Text(passwordMessage)
+                                .foregroundColor(.red)
+                                .opacity(0.6)
+                                .frame(width: 300, height: 20, alignment: .leading)
+                                .background(.white)
+                                .clipShape(RoundedRectangle(cornerRadius: 8))
+                            
+                        }
+                        
+                        // ConfimPassword View
+                        HStack(spacing: 20) {
                             Image(systemName: "lock.fill")
-                            TextField("Confirm Password", text: $signUpViewModel.confirmPassword)
+                            TextInputToggleView(securityField: $signUpViewModel.confirmPassword, title: "Confirm Password", isTextField: isConfirmationPasswordVisible)
                                 .onTapGesture {
                                     signUpViewModel.activeField = .passwordConfirmation
                                 }
                             
                             Button {
-                                //
+                                isConfirmationPasswordVisible.toggle()
                             } label: {
-                                Image(systemName: "eye.slash.fill")
+                                Image(systemName: isConfirmationPasswordVisible ? "eye.fill" : "eye.slash.fill")
                             }
 
                         }
@@ -77,11 +112,20 @@ struct SignUpView: View {
                         .background(signUpViewModel.isActivePasswordConfirmation() ? Color("selectedField") : Color("ColorShadow'sFields"))
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                         
+                        if let messagePasswordConfirmation = confirmationPasswordError {
+                            Text(messagePasswordConfirmation)
+                                .foregroundColor(.red)
+                                .opacity(0.6)
+                                .frame(width: 300, height: 20)
+                                .background(.white)
+                                .clipShape(RoundedRectangle(cornerRadius: 8))
+                        }
+                        
                         HStack {
                             Button {
-                                //
+                                rememberPassword.toggle()
                             } label: {
-                                Image(systemName: "square")
+                                Image(systemName: rememberPassword ? "checkmark.square" : "square")
                                     .foregroundColor(.purple)
                             }
 
@@ -94,7 +138,9 @@ struct SignUpView: View {
                     
                     VStack(spacing: 20) {
                         Button {
-                            //
+                            emailMessageError = signUpViewModel.getEmailError()
+                            passwordMessageError = signUpViewModel.getPasswordError()
+                            confirmationPasswordError = signUpViewModel.getPasswordConfirmationError()
                         } label: {
                             Text("Sign Up")
                         }
@@ -142,8 +188,6 @@ struct SignUpView: View {
                 .frame(width: geometry.size.width, height: geometry.size.height)
             }
             }
-            
-            
     }
 }
 
