@@ -30,85 +30,87 @@ struct SignInView: View {
     ]
     
     var body: some View {
-        GeometryReader { geometry in
-            VStack {
+        NavigationView {
+            GeometryReader { geometry in
                 VStack {
-                    Text("Let's you in")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .frame(width: 300)
-                }
-                .frame(width: geometry.size.width / 3, height: geometry.size.height / 3)
-                
-                VStack(spacing: 20) {
+                    VStack {
+                        Text("Let's you in")
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                            .frame(width: 300)
+                    }
+                    .frame(width: geometry.size.width / 3, height: geometry.size.height / 3)
                     
-                    ForEach(signInMethods, id: \.self) { signInMethod in
-                        Button {
-                            //
-                        } label: {
-                            if signInMethod.imageType == .asset {
-                                HStack(spacing: 30) {
-                                    Image(signInMethod.image)
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 45, height: 45)
-                                    Text(signInMethod.name)
-                                }
-                            } else {
-                                HStack(spacing: 30) {
-                                    Image(systemName: signInMethod.image)
-                                    Text(signInMethod.name)
+                    VStack(spacing: 20) {
+                        
+                        ForEach(signInMethods, id: \.self) { signInMethod in
+                            Button {
+                                //
+                            } label: {
+                                if signInMethod.imageType == .asset {
+                                    HStack(spacing: 30) {
+                                        Image(signInMethod.image)
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 45, height: 45)
+                                        Text(signInMethod.name)
+                                    }
+                                } else {
+                                    HStack(spacing: 30) {
+                                        Image(systemName: signInMethod.image)
+                                        Text(signInMethod.name)
+                                    }
                                 }
                             }
-                        }
-                        .foregroundColor(.black)
-                        .frame(width: 324, height: 51)
-                        .background(.white, ignoresSafeAreaEdges: [])
-                        .clipShape(RoundedRectangle(cornerRadius: 25))
-                        .background {
-                            RoundedRectangle(cornerRadius: 25)
-                                .stroke(Color.purple, lineWidth: 2)
-                        }
+                            .foregroundColor(.black)
+                            .frame(width: 324, height: 51)
+                            .background(.white, ignoresSafeAreaEdges: [])
+                            .clipShape(RoundedRectangle(cornerRadius: 25))
+                            .background {
+                                RoundedRectangle(cornerRadius: 25)
+                                    .stroke(Color.purple, lineWidth: 2)
+                            }
 
+                        }
                     }
-                }
-                .frame(width: geometry.size.width / 3, height: geometry.size.height / 3)
-                
-                VStack(spacing: 35) {
-                    ZStack {
-                        Divider()
-                            .frame(width: 500, height: 2)
-                        Text("or")
-                            .frame(width: 50)
-                            .background(.white)
-                    }
+                    .frame(width: geometry.size.width / 3, height: geometry.size.height / 3)
                     
-                    Button {
-                        //
-                    } label: {
-                        Text("Sign In with Password")
-                    }
-                    .foregroundColor(.white)
-                    .frame(width: 324, height: 51)
-                    .background(.purple, ignoresSafeAreaEdges: [])
-                    .clipShape(RoundedRectangle(cornerRadius: 25))
-                    
-                    HStack {
-                        Text("Don't have a account ?")
-                            .frame(width: 200)
-                        Button {
-                            appStateManager.signUp()
+                    VStack(spacing: 35) {
+                        ZStack {
+                            Divider()
+                                .frame(width: 500, height: 2)
+                            Text("or")
+                                .frame(width: 50)
+                                .background(.white)
+                        }
+                        
+                        NavigationLink {
+                            LogInView()
                         } label: {
-                            Text("Sign Up")
-                                .frame(width: 100)
-                                .foregroundColor(Color.purple)
+                            Text("Sign In with Password")
                         }
+                        .foregroundColor(.white)
+                        .frame(width: 324, height: 51)
+                        .background(.purple, ignoresSafeAreaEdges: [])
+                        .clipShape(RoundedRectangle(cornerRadius: 25))
+                        
+                        HStack {
+                            Text("Don't have a account ?")
+                                .frame(width: 200)
+                            Button {
+                                appStateManager.signUp()
+                            } label: {
+                                Text("Sign Up")
+                                    .frame(width: 100)
+                                    .foregroundColor(Color.purple)
+                            }
 
+                        }
                     }
+                    .frame(width: geometry.size.width / 3, height: geometry.size.height / 3)
                 }
-                .frame(width: geometry.size.width / 3, height: geometry.size.height / 3)
+                .frame(width: geometry.size.width, height: geometry.size.height)
             }
-            .frame(width: geometry.size.width, height: geometry.size.height)
         }
     }
 }

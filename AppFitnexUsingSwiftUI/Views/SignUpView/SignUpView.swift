@@ -38,17 +38,14 @@ struct SignUpView: View {
                     VStack(spacing: 18) {
                         
                         // Email View
-                        HStack(spacing: 20) {
-                            Image(systemName: "envelope.fill")
-                            TextField("Email", text: $signUpViewModel.email)
-                                .onTapGesture {
-                                    signUpViewModel.activeField = .email
-                                }
-                        }
+                        EmailField(email: $signUpViewModel.email, imageName: "envelope.fill", title: "Email")
                         .foregroundColor(signUpViewModel.isEmailActiveOrFill() ? .black : .gray)
                         .frame(width: 300, height: 40)
                         .background(signUpViewModel.isActiveEmail() ?  Color("selectedField"): Color("ColorShadow'sFields"))
                         .clipShape(RoundedRectangle(cornerRadius: 8))
+                        .onTapGesture {
+                            signUpViewModel.activeField = .email
+                        }
                         
                         if let emailError = emailMessageError {
                             Text(emailError)
@@ -60,27 +57,14 @@ struct SignUpView: View {
                         }
                             
                         // Password View
-                        HStack(spacing: 20) {
-                            Image(systemName: "lock.fill")
-                            TextInputToggleView(securityField: $signUpViewModel.password, title: "Password", isTextField: isPasswordVisible)
-                                .onTapGesture {
-                                    signUpViewModel.activeField = .password
-                                }
-                            Button {
-                                isPasswordVisible.toggle()
-                            } label: {
-                                if isPasswordVisible == false {
-                                    Image(systemName: "eye.slash.fill")
-                                } else {
-                                    Image(systemName: "eye.fill")
-                                }
-                            }
-
-                        }
+                        PasswordTextField(password: $signUpViewModel.password, isFieldVisible: isPasswordVisible, sistemNameImage: "lock.fill", title: "password")
                         .foregroundColor(signUpViewModel.isPasswordActiveOrFill() ? .black : .gray)
                         .frame(width: 300, height: 40)
                         .background(signUpViewModel.isActivePassword() ? Color("selectedField") : Color("ColorShadow'sFields"))
                         .clipShape(RoundedRectangle(cornerRadius: 8))
+                        .onTapGesture {
+                            signUpViewModel.activeField = .password
+                        }
                         
                         if let passwordMessage = passwordMessageError {
                             Text(passwordMessage)
@@ -89,28 +73,17 @@ struct SignUpView: View {
                                 .frame(width: 300, height: 20, alignment: .leading)
                                 .background(.white)
                                 .clipShape(RoundedRectangle(cornerRadius: 8))
-                            
                         }
                         
                         // ConfimPassword View
-                        HStack(spacing: 20) {
-                            Image(systemName: "lock.fill")
-                            TextInputToggleView(securityField: $signUpViewModel.confirmPassword, title: "Confirm Password", isTextField: isConfirmationPasswordVisible)
-                                .onTapGesture {
-                                    signUpViewModel.activeField = .passwordConfirmation
-                                }
-                            
-                            Button {
-                                isConfirmationPasswordVisible.toggle()
-                            } label: {
-                                Image(systemName: isConfirmationPasswordVisible ? "eye.fill" : "eye.slash.fill")
-                            }
-
-                        }
+                        PasswordTextField(password: $signUpViewModel.confirmPassword, isFieldVisible: isConfirmationPasswordVisible, sistemNameImage: "lock.fill", title: "Confirm Password")
                         .foregroundColor(signUpViewModel.isPasswordConfirmationActiveOrFill() ? .black : .gray)
                         .frame(width: 300, height: 40)
                         .background(signUpViewModel.isActivePasswordConfirmation() ? Color("selectedField") : Color("ColorShadow'sFields"))
                         .clipShape(RoundedRectangle(cornerRadius: 8))
+                        .onTapGesture {
+                            signUpViewModel.activeField = .passwordConfirmation
+                        }
                         
                         if let messagePasswordConfirmation = confirmationPasswordError {
                             Text(messagePasswordConfirmation)
