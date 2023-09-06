@@ -12,11 +12,15 @@
 		B417DAC82A8860A600A05C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B417DAC72A8860A600A05C95 /* Assets.xcassets */; };
 		B417DACB2A8860A600A05C95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B417DACA2A8860A600A05C95 /* Preview Assets.xcassets */; };
 		B417DAD52A88633A00A05C95 /* OnboardingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B417DAD42A88633A00A05C95 /* OnboardingItemView.swift */; };
+		B419E7232AA2C38700AFC7E2 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419E7222AA2C38700AFC7E2 /* PasswordTextField.swift */; };
 		B41B8D942AA029260021FF97 /* TextInputToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B8D932AA029260021FF97 /* TextInputToggleView.swift */; };
 		B42394152A8C0A0D007BD9F1 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42394142A8C0A0D007BD9F1 /* SignInView.swift */; };
 		B43536A92A9432A000A64CE9 /* ActiveField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43536A82A9432A000A64CE9 /* ActiveField.swift */; };
+		B44A77172AA58CC300599F11 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A77162AA58CC300599F11 /* SignInViewModel.swift */; };
 		B453B90E2A95CC9D00CC64D4 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */; };
+		B45EFB6A2AA460C6003D5772 /* EmailField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45EFB692AA460C6003D5772 /* EmailField.swift */; };
 		B46AAFFA2A8FDEDB006D32A8 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AAFF92A8FDEDB006D32A8 /* ButtonView.swift */; };
+		B4719EB32AA104C700A658ED /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4719EB22AA104C700A658ED /* LogInView.swift */; };
 		B48A6ED02A8F3223003DCC3D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48A6ECF2A8F3223003DCC3D /* SignUpView.swift */; };
 		B4CA4B742A8B10CD00592575 /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA4B732A8B10CD00592575 /* OnboardingItem.swift */; };
 		B4CA4B762A8B22BF00592575 /* OnboardingNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA4B752A8B22BF00592575 /* OnboardingNavigationButton.swift */; };
@@ -34,11 +38,15 @@
 		B417DAC72A8860A600A05C95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B417DACA2A8860A600A05C95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B417DAD42A88633A00A05C95 /* OnboardingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItemView.swift; sourceTree = "<group>"; };
+		B419E7222AA2C38700AFC7E2 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		B41B8D932AA029260021FF97 /* TextInputToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputToggleView.swift; sourceTree = "<group>"; };
 		B42394142A8C0A0D007BD9F1 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		B43536A82A9432A000A64CE9 /* ActiveField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveField.swift; sourceTree = "<group>"; };
+		B44A77162AA58CC300599F11 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		B45EFB692AA460C6003D5772 /* EmailField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailField.swift; sourceTree = "<group>"; };
 		B46AAFF92A8FDEDB006D32A8 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		B4719EB22AA104C700A658ED /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		B48A6ECF2A8F3223003DCC3D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		B4CA4B732A8B10CD00592575 /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
 		B4CA4B752A8B22BF00592575 /* OnboardingNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNavigationButton.swift; sourceTree = "<group>"; };
@@ -102,6 +110,7 @@
 		B417DAD12A88620300A05C95 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B45EFB682AA45FFD003D5772 /* Fields */,
 				B49FE8F62A97F18300493ABE /* LogIn */,
 				B46AAFF82A8FDEBA006D32A8 /* Buttons */,
 				B48A6ECE2A8F3182003DCC3D /* SignUpView */,
@@ -130,6 +139,14 @@
 			path = SignInView;
 			sourceTree = "<group>";
 		};
+		B45EFB682AA45FFD003D5772 /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				B45EFB692AA460C6003D5772 /* EmailField.swift */,
+			);
+			path = Fields;
+			sourceTree = "<group>";
+		};
 		B46AAFF82A8FDEBA006D32A8 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +160,7 @@
 			children = (
 				B48A6ECF2A8F3223003DCC3D /* SignUpView.swift */,
 				B41B8D932AA029260021FF97 /* TextInputToggleView.swift */,
+				B419E7222AA2C38700AFC7E2 /* PasswordTextField.swift */,
 			);
 			path = SignUpView;
 			sourceTree = "<group>";
@@ -150,6 +168,7 @@
 		B49FE8F62A97F18300493ABE /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
+				B4719EB22AA104C700A658ED /* LogInView.swift */,
 			);
 			path = LogIn;
 			sourceTree = "<group>";
@@ -166,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */,
+				B44A77162AA58CC300599F11 /* SignInViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -260,11 +280,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B42394152A8C0A0D007BD9F1 /* SignInView.swift in Sources */,
+				B4719EB32AA104C700A658ED /* LogInView.swift in Sources */,
+				B419E7232AA2C38700AFC7E2 /* PasswordTextField.swift in Sources */,
 				B4F909172A8D973A00AC1B2F /* AppStateManager.swift in Sources */,
+				B44A77172AA58CC300599F11 /* SignInViewModel.swift in Sources */,
 				B43536A92A9432A000A64CE9 /* ActiveField.swift in Sources */,
 				B46AAFFA2A8FDEDB006D32A8 /* ButtonView.swift in Sources */,
 				B417DAC62A8860A500A05C95 /* ContentView.swift in Sources */,
 				B4F9091A2A8D983A00AC1B2F /* AppState.swift in Sources */,
+				B45EFB6A2AA460C6003D5772 /* EmailField.swift in Sources */,
 				B48A6ED02A8F3223003DCC3D /* SignUpView.swift in Sources */,
 				B453B90E2A95CC9D00CC64D4 /* SignUpViewModel.swift in Sources */,
 				B4CA4B742A8B10CD00592575 /* OnboardingItem.swift in Sources */,
