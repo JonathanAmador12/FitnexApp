@@ -12,10 +12,13 @@
 		B417DAC82A8860A600A05C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B417DAC72A8860A600A05C95 /* Assets.xcassets */; };
 		B417DACB2A8860A600A05C95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B417DACA2A8860A600A05C95 /* Preview Assets.xcassets */; };
 		B417DAD52A88633A00A05C95 /* OnboardingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B417DAD42A88633A00A05C95 /* OnboardingItemView.swift */; };
+		B418C3F12AA93AB100811D9B /* logInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418C3F02AA93AB100811D9B /* logInService.swift */; };
+		B418C3F42AA9485400811D9B /* APIErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418C3F32AA9485400811D9B /* APIErrors.swift */; };
 		B419E7232AA2C38700AFC7E2 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419E7222AA2C38700AFC7E2 /* PasswordTextField.swift */; };
 		B41B8D942AA029260021FF97 /* TextInputToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B8D932AA029260021FF97 /* TextInputToggleView.swift */; };
 		B42394152A8C0A0D007BD9F1 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42394142A8C0A0D007BD9F1 /* SignInView.swift */; };
 		B43536A92A9432A000A64CE9 /* ActiveField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43536A82A9432A000A64CE9 /* ActiveField.swift */; };
+		B4371BFD2AAA4FDD00AE11E9 /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4371BFC2AAA4FDD00AE11E9 /* TokenModel.swift */; };
 		B44A77172AA58CC300599F11 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A77162AA58CC300599F11 /* SignInViewModel.swift */; };
 		B453B90E2A95CC9D00CC64D4 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */; };
 		B45EFB6A2AA460C6003D5772 /* EmailField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45EFB692AA460C6003D5772 /* EmailField.swift */; };
@@ -24,6 +27,7 @@
 		B48A6ED02A8F3223003DCC3D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48A6ECF2A8F3223003DCC3D /* SignUpView.swift */; };
 		B4CA4B742A8B10CD00592575 /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA4B732A8B10CD00592575 /* OnboardingItem.swift */; };
 		B4CA4B762A8B22BF00592575 /* OnboardingNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA4B752A8B22BF00592575 /* OnboardingNavigationButton.swift */; };
+		B4DB116F2AA9513C00037DC5 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DB116E2AA9513C00037DC5 /* Credential.swift */; };
 		B4F909172A8D973A00AC1B2F /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F909162A8D973A00AC1B2F /* AppStateManager.swift */; };
 		B4F9091A2A8D983A00AC1B2F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F909192A8D983A00AC1B2F /* AppState.swift */; };
 		B4F9091C2A8D9AD000AC1B2F /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9091B2A8D9AD000AC1B2F /* OnboardingManager.swift */; };
@@ -38,10 +42,13 @@
 		B417DAC72A8860A600A05C95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B417DACA2A8860A600A05C95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B417DAD42A88633A00A05C95 /* OnboardingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItemView.swift; sourceTree = "<group>"; };
+		B418C3F02AA93AB100811D9B /* logInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInService.swift; sourceTree = "<group>"; };
+		B418C3F32AA9485400811D9B /* APIErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrors.swift; sourceTree = "<group>"; };
 		B419E7222AA2C38700AFC7E2 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		B41B8D932AA029260021FF97 /* TextInputToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputToggleView.swift; sourceTree = "<group>"; };
 		B42394142A8C0A0D007BD9F1 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		B43536A82A9432A000A64CE9 /* ActiveField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveField.swift; sourceTree = "<group>"; };
+		B4371BFC2AAA4FDD00AE11E9 /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
 		B44A77162AA58CC300599F11 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		B45EFB692AA460C6003D5772 /* EmailField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailField.swift; sourceTree = "<group>"; };
@@ -50,6 +57,7 @@
 		B48A6ECF2A8F3223003DCC3D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		B4CA4B732A8B10CD00592575 /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
 		B4CA4B752A8B22BF00592575 /* OnboardingNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNavigationButton.swift; sourceTree = "<group>"; };
+		B4DB116E2AA9513C00037DC5 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		B4F909162A8D973A00AC1B2F /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
 		B4F909192A8D983A00AC1B2F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		B4F9091B2A8D9AD000AC1B2F /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
@@ -87,6 +95,8 @@
 		B417DAC22A8860A500A05C95 /* AppFitnexUsingSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B418C3F22AA93D5E00811D9B /* URLs */,
+				B418C3EF2AA93A1000811D9B /* Services */,
 				B4F909182A8D97F000AC1B2F /* Enums */,
 				B4F909152A8D970B00AC1B2F /* Managers */,
 				B4CA4B722A8B0F3300592575 /* ViewModels */,
@@ -119,6 +129,21 @@
 				B417DAC52A8860A500A05C95 /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B418C3EF2AA93A1000811D9B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B418C3F02AA93AB100811D9B /* logInService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B418C3F22AA93D5E00811D9B /* URLs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = URLs;
 			sourceTree = "<group>";
 		};
 		B42394122A8C0761007BD9F1 /* OnboardingView */ = {
@@ -177,6 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				B4CA4B732A8B10CD00592575 /* OnboardingItem.swift */,
+				B4DB116E2AA9513C00037DC5 /* Credential.swift */,
+				B4371BFC2AAA4FDD00AE11E9 /* TokenModel.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -205,6 +232,7 @@
 			children = (
 				B4F909192A8D983A00AC1B2F /* AppState.swift */,
 				B43536A82A9432A000A64CE9 /* ActiveField.swift */,
+				B418C3F32AA9485400811D9B /* APIErrors.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -281,14 +309,18 @@
 			files = (
 				B42394152A8C0A0D007BD9F1 /* SignInView.swift in Sources */,
 				B4719EB32AA104C700A658ED /* LogInView.swift in Sources */,
+				B418C3F12AA93AB100811D9B /* logInService.swift in Sources */,
+				B418C3F42AA9485400811D9B /* APIErrors.swift in Sources */,
 				B419E7232AA2C38700AFC7E2 /* PasswordTextField.swift in Sources */,
 				B4F909172A8D973A00AC1B2F /* AppStateManager.swift in Sources */,
 				B44A77172AA58CC300599F11 /* SignInViewModel.swift in Sources */,
 				B43536A92A9432A000A64CE9 /* ActiveField.swift in Sources */,
+				B4DB116F2AA9513C00037DC5 /* Credential.swift in Sources */,
 				B46AAFFA2A8FDEDB006D32A8 /* ButtonView.swift in Sources */,
 				B417DAC62A8860A500A05C95 /* ContentView.swift in Sources */,
 				B4F9091A2A8D983A00AC1B2F /* AppState.swift in Sources */,
 				B45EFB6A2AA460C6003D5772 /* EmailField.swift in Sources */,
+				B4371BFD2AAA4FDD00AE11E9 /* TokenModel.swift in Sources */,
 				B48A6ED02A8F3223003DCC3D /* SignUpView.swift in Sources */,
 				B453B90E2A95CC9D00CC64D4 /* SignUpViewModel.swift in Sources */,
 				B4CA4B742A8B10CD00592575 /* OnboardingItem.swift in Sources */,

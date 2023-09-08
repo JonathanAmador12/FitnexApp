@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LogInView: View {
+    @EnvironmentObject var appStateManager: AppStateManger
     @ObservedObject var signInViewModel = SignInViewModel()
     
     @State var emailErrorMessage: String?
@@ -82,6 +83,9 @@ struct LogInView: View {
                         emailErrorMessage = signInViewModel.getEmailErrorMessage(email: signInViewModel.email)
                         
                         passwordErrorMessage = signInViewModel.getPasswordErrorMessage(password: signInViewModel.password)
+                        
+                        signInViewModel.getTokensOfService(credential: Credential(email: signInViewModel.email, password: signInViewModel.password))
+                        
                     } label: {
                         Text("Sign in")
                     }
@@ -129,7 +133,7 @@ struct LogInView: View {
                         Text("Don't have account")
                             .frame(width: 150, height: 20)
                         Button {
-                            //
+                            appStateManager.signUp()
                         } label: {
                             Text("Sign Up")
                                 .foregroundColor(.purple)
