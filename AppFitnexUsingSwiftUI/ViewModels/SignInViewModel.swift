@@ -14,7 +14,9 @@ class SignInViewModel: ObservableObject {
     @Published var activeField: SignUpFormField?
     @Published var isPasswordVisible: Bool = false
     @Published var rememberMe: Bool = false
-        
+    
+    var logInService = LogInService()
+    
     // functions that validate fields
     func isValidEmail(email: String) -> Bool {
         let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
@@ -66,4 +68,15 @@ class SignInViewModel: ObservableObject {
         }
     }
     
+    // functions that retrieve tokens
+    func getTokensOfService(credential: Credential) -> Void {
+        logInService.getUserOfService(credencial: credential) { Tokens in
+            switch Tokens {
+            case .success(let tokens):
+                print("\(tokens)")
+            case .failure(let error):
+                print("\(error)")
+            }
+        }
+    }
 }

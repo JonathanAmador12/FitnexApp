@@ -12,4 +12,5 @@ enum AppState {
     case signUp
     case signIn
     case main
+    case logIn
 }
