@@ -19,6 +19,7 @@
 		B42394152A8C0A0D007BD9F1 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42394142A8C0A0D007BD9F1 /* SignInView.swift */; };
 		B43536A92A9432A000A64CE9 /* ActiveField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43536A82A9432A000A64CE9 /* ActiveField.swift */; };
 		B4371BFD2AAA4FDD00AE11E9 /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4371BFC2AAA4FDD00AE11E9 /* TokenModel.swift */; };
+		B444F4272AAFF7B40033A89B /* KeychainToKeepTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = B444F4262AAFF7B40033A89B /* KeychainToKeepTokens.swift */; };
 		B44A77172AA58CC300599F11 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A77162AA58CC300599F11 /* SignInViewModel.swift */; };
 		B453B90E2A95CC9D00CC64D4 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */; };
 		B45EFB6A2AA460C6003D5772 /* EmailField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45EFB692AA460C6003D5772 /* EmailField.swift */; };
@@ -49,6 +50,7 @@
 		B42394142A8C0A0D007BD9F1 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		B43536A82A9432A000A64CE9 /* ActiveField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveField.swift; sourceTree = "<group>"; };
 		B4371BFC2AAA4FDD00AE11E9 /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
+		B444F4262AAFF7B40033A89B /* KeychainToKeepTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainToKeepTokens.swift; sourceTree = "<group>"; };
 		B44A77162AA58CC300599F11 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		B45EFB692AA460C6003D5772 /* EmailField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailField.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		B417DAC22A8860A500A05C95 /* AppFitnexUsingSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B444F4252AAFF7450033A89B /* Keychain */,
 				B418C3F22AA93D5E00811D9B /* URLs */,
 				B418C3EF2AA93A1000811D9B /* Services */,
 				B4F909182A8D97F000AC1B2F /* Enums */,
@@ -162,6 +165,14 @@
 				B42394142A8C0A0D007BD9F1 /* SignInView.swift */,
 			);
 			path = SignInView;
+			sourceTree = "<group>";
+		};
+		B444F4252AAFF7450033A89B /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				B444F4262AAFF7B40033A89B /* KeychainToKeepTokens.swift */,
+			);
+			path = Keychain;
 			sourceTree = "<group>";
 		};
 		B45EFB682AA45FFD003D5772 /* Fields */ = {
@@ -310,6 +321,7 @@
 				B42394152A8C0A0D007BD9F1 /* SignInView.swift in Sources */,
 				B4719EB32AA104C700A658ED /* LogInView.swift in Sources */,
 				B418C3F12AA93AB100811D9B /* logInService.swift in Sources */,
+				B444F4272AAFF7B40033A89B /* KeychainToKeepTokens.swift in Sources */,
 				B418C3F42AA9485400811D9B /* APIErrors.swift in Sources */,
 				B419E7232AA2C38700AFC7E2 /* PasswordTextField.swift in Sources */,
 				B4F909172A8D973A00AC1B2F /* AppStateManager.swift in Sources */,
