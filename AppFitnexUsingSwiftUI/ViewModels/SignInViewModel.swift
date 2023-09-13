@@ -16,6 +16,7 @@ class SignInViewModel: ObservableObject {
     @Published var rememberMe: Bool = false
     
     var logInService = LogInService()
+    var keyStorage = KeyStorage()
     
     // functions that validate fields
     func isValidEmail(email: String) -> Bool {
@@ -73,7 +74,12 @@ class SignInViewModel: ObservableObject {
         logInService.getUserOfService(credencial: credential) { Tokens in
             switch Tokens {
             case .success(let tokens):
-                print("\(tokens)")
+                do {
+                    let areKeepTokens = try self.keyStorage.saveTokensToKeychain(accessToken: tokens.accessToken, refreshToken: tokens.refreshToken)
+                } catch {
+                    print(error)
+                }
+                
             case .failure(let error):
                 print("\(error)")
             }

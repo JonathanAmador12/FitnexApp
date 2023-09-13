@@ -44,10 +44,9 @@ class LogInService {
         URLSession.shared.dataTask(with: request) { data, response, error in
             var result:  Result<TokenModel, APIError>
             
-            guard let response = response as? HTTPURLResponse else {
+            guard let response = response as? HTTPURLResponse, let data = data else {
                 return
             }
-            
             if response.statusCode == 400 {
                 result = .failure(APIError.badRequest)
                 handler(result)
@@ -56,19 +55,15 @@ class LogInService {
                 handler(result)
             }
             
-            guard let data = data else {
-                return
-            }
-            
             do {
                 let token = try JSONDecoder().decode(TokenModel.self, from: data)
                 result = .success(token)
+                handler(result)
             } catch {
                 print("\(error)")
+                result = .failure(.badDecoude)
+                handler(result)
             }
-            
-            result = .failure(.badDecoude)
-            handler(result)
             
         }.resume()
     }
