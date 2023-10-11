@@ -30,7 +30,7 @@ class LogInService {
             return
         }
         
-        guard let url = URL(string: "http://192.168.1.88:3000/auth/token") else {
+        guard let url = URL(string: "http://192.168.1.88:3000/account/token") else {
             result = .failure(APIError.badURL)
             handler(result)
             return
