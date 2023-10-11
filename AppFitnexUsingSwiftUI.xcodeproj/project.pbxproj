@@ -15,20 +15,25 @@
 		B418C3F12AA93AB100811D9B /* logInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418C3F02AA93AB100811D9B /* logInService.swift */; };
 		B418C3F42AA9485400811D9B /* APIErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418C3F32AA9485400811D9B /* APIErrors.swift */; };
 		B419E7232AA2C38700AFC7E2 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419E7222AA2C38700AFC7E2 /* PasswordTextField.swift */; };
+		B41A823B2ABD140400235289 /* AgePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41A823A2ABD140400235289 /* AgePicker.swift */; };
 		B41B8D942AA029260021FF97 /* TextInputToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B8D932AA029260021FF97 /* TextInputToggleView.swift */; };
 		B42394152A8C0A0D007BD9F1 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42394142A8C0A0D007BD9F1 /* SignInView.swift */; };
 		B43536A92A9432A000A64CE9 /* ActiveField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43536A82A9432A000A64CE9 /* ActiveField.swift */; };
 		B4371BFD2AAA4FDD00AE11E9 /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4371BFC2AAA4FDD00AE11E9 /* TokenModel.swift */; };
+		B437B59F2AB24F5F006CDA97 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B437B59E2AB24F5F006CDA97 /* GenderView.swift */; };
+		B437B5A12AB2999B006CDA97 /* AgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B437B5A02AB2999B006CDA97 /* AgeView.swift */; };
 		B444F4272AAFF7B40033A89B /* KeychainToKeepTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = B444F4262AAFF7B40033A89B /* KeychainToKeepTokens.swift */; };
 		B44A77172AA58CC300599F11 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A77162AA58CC300599F11 /* SignInViewModel.swift */; };
 		B453B90E2A95CC9D00CC64D4 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */; };
 		B45EFB6A2AA460C6003D5772 /* EmailField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45EFB692AA460C6003D5772 /* EmailField.swift */; };
 		B46AAFFA2A8FDEDB006D32A8 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AAFF92A8FDEDB006D32A8 /* ButtonView.swift */; };
 		B4719EB32AA104C700A658ED /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4719EB22AA104C700A658ED /* LogInView.swift */; };
+		B47851BD2AD4F4AF00F54D93 /* ProtocolPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47851BC2AD4F4AF00F54D93 /* ProtocolPicker.swift */; };
 		B48A6ED02A8F3223003DCC3D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48A6ECF2A8F3223003DCC3D /* SignUpView.swift */; };
 		B4CA4B742A8B10CD00592575 /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA4B732A8B10CD00592575 /* OnboardingItem.swift */; };
 		B4CA4B762A8B22BF00592575 /* OnboardingNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA4B752A8B22BF00592575 /* OnboardingNavigationButton.swift */; };
 		B4DB116F2AA9513C00037DC5 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DB116E2AA9513C00037DC5 /* Credential.swift */; };
+		B4F757E22AD3BC5D0013CE1D /* CustomPikerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F757E12AD3BC5D0013CE1D /* CustomPikerViewController.swift */; };
 		B4F909172A8D973A00AC1B2F /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F909162A8D973A00AC1B2F /* AppStateManager.swift */; };
 		B4F9091A2A8D983A00AC1B2F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F909192A8D983A00AC1B2F /* AppState.swift */; };
 		B4F9091C2A8D9AD000AC1B2F /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9091B2A8D9AD000AC1B2F /* OnboardingManager.swift */; };
@@ -46,20 +51,25 @@
 		B418C3F02AA93AB100811D9B /* logInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInService.swift; sourceTree = "<group>"; };
 		B418C3F32AA9485400811D9B /* APIErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrors.swift; sourceTree = "<group>"; };
 		B419E7222AA2C38700AFC7E2 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		B41A823A2ABD140400235289 /* AgePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgePicker.swift; sourceTree = "<group>"; };
 		B41B8D932AA029260021FF97 /* TextInputToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputToggleView.swift; sourceTree = "<group>"; };
 		B42394142A8C0A0D007BD9F1 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		B43536A82A9432A000A64CE9 /* ActiveField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveField.swift; sourceTree = "<group>"; };
 		B4371BFC2AAA4FDD00AE11E9 /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
+		B437B59E2AB24F5F006CDA97 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
+		B437B5A02AB2999B006CDA97 /* AgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		B444F4262AAFF7B40033A89B /* KeychainToKeepTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainToKeepTokens.swift; sourceTree = "<group>"; };
 		B44A77162AA58CC300599F11 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		B45EFB692AA460C6003D5772 /* EmailField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailField.swift; sourceTree = "<group>"; };
 		B46AAFF92A8FDEDB006D32A8 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		B4719EB22AA104C700A658ED /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		B47851BC2AD4F4AF00F54D93 /* ProtocolPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolPicker.swift; sourceTree = "<group>"; };
 		B48A6ECF2A8F3223003DCC3D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		B4CA4B732A8B10CD00592575 /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
 		B4CA4B752A8B22BF00592575 /* OnboardingNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNavigationButton.swift; sourceTree = "<group>"; };
 		B4DB116E2AA9513C00037DC5 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		B4F757E12AD3BC5D0013CE1D /* CustomPikerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPikerViewController.swift; sourceTree = "<group>"; };
 		B4F909162A8D973A00AC1B2F /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
 		B4F909192A8D983A00AC1B2F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		B4F9091B2A8D9AD000AC1B2F /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
@@ -97,6 +107,7 @@
 		B417DAC22A8860A500A05C95 /* AppFitnexUsingSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B47851BB2AD4F44000F54D93 /* Protocols */,
 				B444F4252AAFF7450033A89B /* Keychain */,
 				B418C3F22AA93D5E00811D9B /* URLs */,
 				B418C3EF2AA93A1000811D9B /* Services */,
@@ -149,6 +160,15 @@
 			path = URLs;
 			sourceTree = "<group>";
 		};
+		B41A82372ABCE50800235289 /* CustomPicker */ = {
+			isa = PBXGroup;
+			children = (
+				B41A823A2ABD140400235289 /* AgePicker.swift */,
+				B4F757E12AD3BC5D0013CE1D /* CustomPikerViewController.swift */,
+			);
+			path = CustomPicker;
+			sourceTree = "<group>";
+		};
 		B42394122A8C0761007BD9F1 /* OnboardingView */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +185,16 @@
 				B42394142A8C0A0D007BD9F1 /* SignInView.swift */,
 			);
 			path = SignInView;
+			sourceTree = "<group>";
+		};
+		B437B59D2AB249DC006CDA97 /* UserForm */ = {
+			isa = PBXGroup;
+			children = (
+				B41A82372ABCE50800235289 /* CustomPicker */,
+				B437B59E2AB24F5F006CDA97 /* GenderView.swift */,
+				B437B5A02AB2999B006CDA97 /* AgeView.swift */,
+			);
+			path = UserForm;
 			sourceTree = "<group>";
 		};
 		B444F4252AAFF7450033A89B /* Keychain */ = {
@@ -191,9 +221,18 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
+		B47851BB2AD4F44000F54D93 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B47851BC2AD4F4AF00F54D93 /* ProtocolPicker.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		B48A6ECE2A8F3182003DCC3D /* SignUpView */ = {
 			isa = PBXGroup;
 			children = (
+				B437B59D2AB249DC006CDA97 /* UserForm */,
 				B48A6ECF2A8F3223003DCC3D /* SignUpView.swift */,
 				B41B8D932AA029260021FF97 /* TextInputToggleView.swift */,
 				B419E7222AA2C38700AFC7E2 /* PasswordTextField.swift */,
@@ -319,22 +358,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				B42394152A8C0A0D007BD9F1 /* SignInView.swift in Sources */,
+				B4F757E22AD3BC5D0013CE1D /* CustomPikerViewController.swift in Sources */,
 				B4719EB32AA104C700A658ED /* LogInView.swift in Sources */,
 				B418C3F12AA93AB100811D9B /* logInService.swift in Sources */,
 				B444F4272AAFF7B40033A89B /* KeychainToKeepTokens.swift in Sources */,
 				B418C3F42AA9485400811D9B /* APIErrors.swift in Sources */,
+				B437B5A12AB2999B006CDA97 /* AgeView.swift in Sources */,
 				B419E7232AA2C38700AFC7E2 /* PasswordTextField.swift in Sources */,
 				B4F909172A8D973A00AC1B2F /* AppStateManager.swift in Sources */,
 				B44A77172AA58CC300599F11 /* SignInViewModel.swift in Sources */,
 				B43536A92A9432A000A64CE9 /* ActiveField.swift in Sources */,
 				B4DB116F2AA9513C00037DC5 /* Credential.swift in Sources */,
 				B46AAFFA2A8FDEDB006D32A8 /* ButtonView.swift in Sources */,
+				B47851BD2AD4F4AF00F54D93 /* ProtocolPicker.swift in Sources */,
 				B417DAC62A8860A500A05C95 /* ContentView.swift in Sources */,
+				B41A823B2ABD140400235289 /* AgePicker.swift in Sources */,
 				B4F9091A2A8D983A00AC1B2F /* AppState.swift in Sources */,
 				B45EFB6A2AA460C6003D5772 /* EmailField.swift in Sources */,
 				B4371BFD2AAA4FDD00AE11E9 /* TokenModel.swift in Sources */,
 				B48A6ED02A8F3223003DCC3D /* SignUpView.swift in Sources */,
 				B453B90E2A95CC9D00CC64D4 /* SignUpViewModel.swift in Sources */,
+				B437B59F2AB24F5F006CDA97 /* GenderView.swift in Sources */,
 				B4CA4B742A8B10CD00592575 /* OnboardingItem.swift in Sources */,
 				B41B8D942AA029260021FF97 /* TextInputToggleView.swift in Sources */,
 				B417DAD52A88633A00A05C95 /* OnboardingItemView.swift in Sources */,

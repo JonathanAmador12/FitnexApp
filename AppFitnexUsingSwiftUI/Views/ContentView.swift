@@ -19,7 +19,6 @@ struct ContentView: View {
         } else if appStateManager.appState == .signUp {
             SignUpView()
         }
-        
     }
     
 }
