@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AgePicker: UIViewControllerRepresentable {
     
-    @State var selectedValue: String
+    @Binding var selectedValue: String
     
     typealias UIViewControllerType = CustomPikerViewController
     
@@ -45,6 +45,6 @@ struct AgePicker: UIViewControllerRepresentable {
 }
 
 #Preview {
-    AgePicker(selectedValue: "")
+    AgePicker(selectedValue: .constant(""))
         .frame(height: 800)
 }
