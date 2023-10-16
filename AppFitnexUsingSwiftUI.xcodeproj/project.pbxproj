@@ -25,6 +25,7 @@
 		B444F4272AAFF7B40033A89B /* KeychainToKeepTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = B444F4262AAFF7B40033A89B /* KeychainToKeepTokens.swift */; };
 		B44A77172AA58CC300599F11 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A77162AA58CC300599F11 /* SignInViewModel.swift */; };
 		B453B90E2A95CC9D00CC64D4 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */; };
+		B45798DD2AD761A2009FFBE4 /* LineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45798DC2AD761A2009FFBE4 /* LineViewController.swift */; };
 		B45EFB6A2AA460C6003D5772 /* EmailField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45EFB692AA460C6003D5772 /* EmailField.swift */; };
 		B46AAFFA2A8FDEDB006D32A8 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AAFF92A8FDEDB006D32A8 /* ButtonView.swift */; };
 		B4719EB32AA104C700A658ED /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4719EB22AA104C700A658ED /* LogInView.swift */; };
@@ -61,6 +62,7 @@
 		B444F4262AAFF7B40033A89B /* KeychainToKeepTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainToKeepTokens.swift; sourceTree = "<group>"; };
 		B44A77162AA58CC300599F11 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		B45798DC2AD761A2009FFBE4 /* LineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
 		B45EFB692AA460C6003D5772 /* EmailField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailField.swift; sourceTree = "<group>"; };
 		B46AAFF92A8FDEDB006D32A8 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		B4719EB22AA104C700A658ED /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				B41A823A2ABD140400235289 /* AgePicker.swift */,
 				B4F757E12AD3BC5D0013CE1D /* CustomPikerViewController.swift */,
+				B45798DC2AD761A2009FFBE4 /* LineViewController.swift */,
 			);
 			path = CustomPicker;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				B46AAFFA2A8FDEDB006D32A8 /* ButtonView.swift in Sources */,
 				B47851BD2AD4F4AF00F54D93 /* ProtocolPicker.swift in Sources */,
 				B417DAC62A8860A500A05C95 /* ContentView.swift in Sources */,
+				B45798DD2AD761A2009FFBE4 /* LineViewController.swift in Sources */,
 				B41A823B2ABD140400235289 /* AgePicker.swift in Sources */,
 				B4F9091A2A8D983A00AC1B2F /* AppState.swift in Sources */,
 				B45EFB6A2AA460C6003D5772 /* EmailField.swift in Sources */,
