@@ -22,7 +22,7 @@ struct AgeView: View {
                     .font(.title)
                     .bold()
                     .frame(width: 300, height: 20)
-                    .padding(.bottom, 50)
+                    .padding(.bottom, 20)
                 
                 // description
                 Text("age in years. This will hep us to personalize an excercise program plant that suits you")
