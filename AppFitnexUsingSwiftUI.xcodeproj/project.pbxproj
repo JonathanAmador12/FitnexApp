@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B403851E2AE5B56000A6EB62 /* HeightSelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B403851D2AE5B56000A6EB62 /* HeightSelectedView.swift */; };
+		B40EFABB2AE6F6190074D0FE /* GoalUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EFABA2AE6F6190074D0FE /* GoalUserView.swift */; };
+		B40EFABD2AE72D370074D0FE /* ActivityLabelUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EFABC2AE72D370074D0FE /* ActivityLabelUserView.swift */; };
+		B40EFABF2AE7362E0074D0FE /* ProfileUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EFABE2AE7362E0074D0FE /* ProfileUserView.swift */; };
 		B417DAC42A8860A500A05C95 /* AppFitnexUsingSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B417DAC32A8860A500A05C95 /* AppFitnexUsingSwiftUIApp.swift */; };
 		B417DAC62A8860A500A05C95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B417DAC52A8860A500A05C95 /* ContentView.swift */; };
 		B417DAC82A8860A600A05C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B417DAC72A8860A600A05C95 /* Assets.xcassets */; };
@@ -25,15 +29,23 @@
 		B444F4272AAFF7B40033A89B /* KeychainToKeepTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = B444F4262AAFF7B40033A89B /* KeychainToKeepTokens.swift */; };
 		B44A77172AA58CC300599F11 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A77162AA58CC300599F11 /* SignInViewModel.swift */; };
 		B453B90E2A95CC9D00CC64D4 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */; };
-		B45798DD2AD761A2009FFBE4 /* LineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45798DC2AD761A2009FFBE4 /* LineViewController.swift */; };
+		B45418FF2ADCBD3100162816 /* WeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45418FE2ADCBD3100162816 /* WeightView.swift */; };
+		B45419042ADCC12D00162816 /* CustomPickerWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45419032ADCC12D00162816 /* CustomPickerWeightViewController.swift */; };
 		B45EFB6A2AA460C6003D5772 /* EmailField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45EFB692AA460C6003D5772 /* EmailField.swift */; };
 		B46AAFFA2A8FDEDB006D32A8 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AAFF92A8FDEDB006D32A8 /* ButtonView.swift */; };
 		B4719EB32AA104C700A658ED /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4719EB22AA104C700A658ED /* LogInView.swift */; };
 		B47851BD2AD4F4AF00F54D93 /* ProtocolPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47851BC2AD4F4AF00F54D93 /* ProtocolPicker.swift */; };
 		B48A6ED02A8F3223003DCC3D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48A6ECF2A8F3223003DCC3D /* SignUpView.swift */; };
+		B4B3092E2AE19CAC00D97711 /* WeightSelectedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B3092D2AE19CAC00D97711 /* WeightSelectedRow.swift */; };
+		B4B595152ADF000E00A59559 /* WeightSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B595142ADF000E00A59559 /* WeightSelectionDelegate.swift */; };
+		B4B595192ADF050700A59559 /* WeightPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B595182ADF050700A59559 /* WeightPicker.swift */; };
 		B4CA4B742A8B10CD00592575 /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA4B732A8B10CD00592575 /* OnboardingItem.swift */; };
 		B4CA4B762A8B22BF00592575 /* OnboardingNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA4B752A8B22BF00592575 /* OnboardingNavigationButton.swift */; };
+		B4D9786E2AE4A84A00C84762 /* HeightDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D9786D2AE4A84A00C84762 /* HeightDelegate.swift */; };
 		B4DB116F2AA9513C00037DC5 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DB116E2AA9513C00037DC5 /* Credential.swift */; };
+		B4F09ED52AE48F75002E67A3 /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F09ED42AE48F75002E67A3 /* HeightView.swift */; };
+		B4F1F1452AE30DA200276211 /* HeightUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1F1442AE30DA200276211 /* HeightUserView.swift */; };
+		B4F1F14E2AE33B6800276211 /* CustomPickerHeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1F14D2AE33B6800276211 /* CustomPickerHeightViewController.swift */; };
 		B4F757E22AD3BC5D0013CE1D /* CustomPikerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F757E12AD3BC5D0013CE1D /* CustomPikerViewController.swift */; };
 		B4F909172A8D973A00AC1B2F /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F909162A8D973A00AC1B2F /* AppStateManager.swift */; };
 		B4F9091A2A8D983A00AC1B2F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F909192A8D983A00AC1B2F /* AppState.swift */; };
@@ -43,6 +55,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B403851D2AE5B56000A6EB62 /* HeightSelectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightSelectedView.swift; sourceTree = "<group>"; };
+		B40EFABA2AE6F6190074D0FE /* GoalUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalUserView.swift; sourceTree = "<group>"; };
+		B40EFABC2AE72D370074D0FE /* ActivityLabelUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLabelUserView.swift; sourceTree = "<group>"; };
+		B40EFABE2AE7362E0074D0FE /* ProfileUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserView.swift; sourceTree = "<group>"; };
 		B417DAC02A8860A500A05C95 /* AppFitnexUsingSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppFitnexUsingSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B417DAC32A8860A500A05C95 /* AppFitnexUsingSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFitnexUsingSwiftUIApp.swift; sourceTree = "<group>"; };
 		B417DAC52A8860A500A05C95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,15 +78,23 @@
 		B444F4262AAFF7B40033A89B /* KeychainToKeepTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainToKeepTokens.swift; sourceTree = "<group>"; };
 		B44A77162AA58CC300599F11 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
-		B45798DC2AD761A2009FFBE4 /* LineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
+		B45418FE2ADCBD3100162816 /* WeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightView.swift; sourceTree = "<group>"; };
+		B45419032ADCC12D00162816 /* CustomPickerWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerWeightViewController.swift; sourceTree = "<group>"; };
 		B45EFB692AA460C6003D5772 /* EmailField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailField.swift; sourceTree = "<group>"; };
 		B46AAFF92A8FDEDB006D32A8 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		B4719EB22AA104C700A658ED /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		B47851BC2AD4F4AF00F54D93 /* ProtocolPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolPicker.swift; sourceTree = "<group>"; };
 		B48A6ECF2A8F3223003DCC3D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		B4B3092D2AE19CAC00D97711 /* WeightSelectedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightSelectedRow.swift; sourceTree = "<group>"; };
+		B4B595142ADF000E00A59559 /* WeightSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightSelectionDelegate.swift; sourceTree = "<group>"; };
+		B4B595182ADF050700A59559 /* WeightPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightPicker.swift; sourceTree = "<group>"; };
 		B4CA4B732A8B10CD00592575 /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
 		B4CA4B752A8B22BF00592575 /* OnboardingNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNavigationButton.swift; sourceTree = "<group>"; };
+		B4D9786D2AE4A84A00C84762 /* HeightDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightDelegate.swift; sourceTree = "<group>"; };
 		B4DB116E2AA9513C00037DC5 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		B4F09ED42AE48F75002E67A3 /* HeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightView.swift; sourceTree = "<group>"; };
+		B4F1F1442AE30DA200276211 /* HeightUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightUserView.swift; sourceTree = "<group>"; };
+		B4F1F14D2AE33B6800276211 /* CustomPickerHeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerHeightViewController.swift; sourceTree = "<group>"; };
 		B4F757E12AD3BC5D0013CE1D /* CustomPikerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPikerViewController.swift; sourceTree = "<group>"; };
 		B4F909162A8D973A00AC1B2F /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
 		B4F909192A8D983A00AC1B2F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
@@ -109,6 +133,7 @@
 		B417DAC22A8860A500A05C95 /* AppFitnexUsingSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B4B5951A2ADF3FFC00A59559 /* Extension */,
 				B47851BB2AD4F44000F54D93 /* Protocols */,
 				B444F4252AAFF7450033A89B /* Keychain */,
 				B418C3F22AA93D5E00811D9B /* URLs */,
@@ -162,14 +187,13 @@
 			path = URLs;
 			sourceTree = "<group>";
 		};
-		B41A82372ABCE50800235289 /* CustomPicker */ = {
+		B41A82372ABCE50800235289 /* CustomPickerAgeView */ = {
 			isa = PBXGroup;
 			children = (
 				B41A823A2ABD140400235289 /* AgePicker.swift */,
 				B4F757E12AD3BC5D0013CE1D /* CustomPikerViewController.swift */,
-				B45798DC2AD761A2009FFBE4 /* LineViewController.swift */,
 			);
-			path = CustomPicker;
+			path = CustomPickerAgeView;
 			sourceTree = "<group>";
 		};
 		B42394122A8C0761007BD9F1 /* OnboardingView */ = {
@@ -193,9 +217,16 @@
 		B437B59D2AB249DC006CDA97 /* UserForm */ = {
 			isa = PBXGroup;
 			children = (
-				B41A82372ABCE50800235289 /* CustomPicker */,
+				B4F1F1462AE338E700276211 /* CustomPickerHeight */,
+				B45419002ADCC01700162816 /* CustomPickerWeight */,
+				B41A82372ABCE50800235289 /* CustomPickerAgeView */,
 				B437B59E2AB24F5F006CDA97 /* GenderView.swift */,
 				B437B5A02AB2999B006CDA97 /* AgeView.swift */,
+				B45418FE2ADCBD3100162816 /* WeightView.swift */,
+				B4F1F1442AE30DA200276211 /* HeightUserView.swift */,
+				B40EFABA2AE6F6190074D0FE /* GoalUserView.swift */,
+				B40EFABC2AE72D370074D0FE /* ActivityLabelUserView.swift */,
+				B40EFABE2AE7362E0074D0FE /* ProfileUserView.swift */,
 			);
 			path = UserForm;
 			sourceTree = "<group>";
@@ -206,6 +237,16 @@
 				B444F4262AAFF7B40033A89B /* KeychainToKeepTokens.swift */,
 			);
 			path = Keychain;
+			sourceTree = "<group>";
+		};
+		B45419002ADCC01700162816 /* CustomPickerWeight */ = {
+			isa = PBXGroup;
+			children = (
+				B45419032ADCC12D00162816 /* CustomPickerWeightViewController.swift */,
+				B4B595182ADF050700A59559 /* WeightPicker.swift */,
+				B4B3092D2AE19CAC00D97711 /* WeightSelectedRow.swift */,
+			);
+			path = CustomPickerWeight;
 			sourceTree = "<group>";
 		};
 		B45EFB682AA45FFD003D5772 /* Fields */ = {
@@ -228,6 +269,8 @@
 			isa = PBXGroup;
 			children = (
 				B47851BC2AD4F4AF00F54D93 /* ProtocolPicker.swift */,
+				B4B595142ADF000E00A59559 /* WeightSelectionDelegate.swift */,
+				B4D9786D2AE4A84A00C84762 /* HeightDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -251,6 +294,13 @@
 			path = LogIn;
 			sourceTree = "<group>";
 		};
+		B4B5951A2ADF3FFC00A59559 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		B4CA4B712A8B0F1E00592575 /* Modelos */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +318,16 @@
 				B44A77162AA58CC300599F11 /* SignInViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B4F1F1462AE338E700276211 /* CustomPickerHeight */ = {
+			isa = PBXGroup;
+			children = (
+				B4F1F14D2AE33B6800276211 /* CustomPickerHeightViewController.swift */,
+				B4F09ED42AE48F75002E67A3 /* HeightView.swift */,
+				B403851D2AE5B56000A6EB62 /* HeightSelectedView.swift */,
+			);
+			path = CustomPickerHeight;
 			sourceTree = "<group>";
 		};
 		B4F909152A8D970B00AC1B2F /* Managers */ = {
@@ -361,7 +421,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B42394152A8C0A0D007BD9F1 /* SignInView.swift in Sources */,
+				B45419042ADCC12D00162816 /* CustomPickerWeightViewController.swift in Sources */,
+				B4F1F1452AE30DA200276211 /* HeightUserView.swift in Sources */,
+				B40EFABF2AE7362E0074D0FE /* ProfileUserView.swift in Sources */,
 				B4F757E22AD3BC5D0013CE1D /* CustomPikerViewController.swift in Sources */,
+				B4B595192ADF050700A59559 /* WeightPicker.swift in Sources */,
+				B4F09ED52AE48F75002E67A3 /* HeightView.swift in Sources */,
 				B4719EB32AA104C700A658ED /* LogInView.swift in Sources */,
 				B418C3F12AA93AB100811D9B /* logInService.swift in Sources */,
 				B444F4272AAFF7B40033A89B /* KeychainToKeepTokens.swift in Sources */,
@@ -369,16 +434,22 @@
 				B437B5A12AB2999B006CDA97 /* AgeView.swift in Sources */,
 				B419E7232AA2C38700AFC7E2 /* PasswordTextField.swift in Sources */,
 				B4F909172A8D973A00AC1B2F /* AppStateManager.swift in Sources */,
+				B40EFABD2AE72D370074D0FE /* ActivityLabelUserView.swift in Sources */,
 				B44A77172AA58CC300599F11 /* SignInViewModel.swift in Sources */,
+				B4F1F14E2AE33B6800276211 /* CustomPickerHeightViewController.swift in Sources */,
 				B43536A92A9432A000A64CE9 /* ActiveField.swift in Sources */,
+				B403851E2AE5B56000A6EB62 /* HeightSelectedView.swift in Sources */,
 				B4DB116F2AA9513C00037DC5 /* Credential.swift in Sources */,
+				B40EFABB2AE6F6190074D0FE /* GoalUserView.swift in Sources */,
 				B46AAFFA2A8FDEDB006D32A8 /* ButtonView.swift in Sources */,
+				B4D9786E2AE4A84A00C84762 /* HeightDelegate.swift in Sources */,
+				B4B3092E2AE19CAC00D97711 /* WeightSelectedRow.swift in Sources */,
 				B47851BD2AD4F4AF00F54D93 /* ProtocolPicker.swift in Sources */,
 				B417DAC62A8860A500A05C95 /* ContentView.swift in Sources */,
-				B45798DD2AD761A2009FFBE4 /* LineViewController.swift in Sources */,
 				B41A823B2ABD140400235289 /* AgePicker.swift in Sources */,
 				B4F9091A2A8D983A00AC1B2F /* AppState.swift in Sources */,
 				B45EFB6A2AA460C6003D5772 /* EmailField.swift in Sources */,
+				B45418FF2ADCBD3100162816 /* WeightView.swift in Sources */,
 				B4371BFD2AAA4FDD00AE11E9 /* TokenModel.swift in Sources */,
 				B48A6ED02A8F3223003DCC3D /* SignUpView.swift in Sources */,
 				B453B90E2A95CC9D00CC64D4 /* SignUpViewModel.swift in Sources */,
@@ -390,6 +461,7 @@
 				B4CA4B762A8B22BF00592575 /* OnboardingNavigationButton.swift in Sources */,
 				B417DAC42A8860A500A05C95 /* AppFitnexUsingSwiftUIApp.swift in Sources */,
 				B4F9091E2A8D9CE500AC1B2F /* AuthManager.swift in Sources */,
+				B4B595152ADF000E00A59559 /* WeightSelectionDelegate.swift in Sources */,
 				B4F909202A8DAEAF00AC1B2F /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
