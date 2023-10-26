@@ -12,6 +12,7 @@ struct AgeView: View {
     @State private var selectedIdx: String = ""
     
     let range = 1...80
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         VStack {
@@ -37,7 +38,7 @@ struct AgeView: View {
             HStack(spacing: 16) {
                 // button of return
                 Button {
-                    //
+                    self.presentationMode.wrappedValue.dismiss()
                 } label: {
                     Text("Back")
                         .foregroundColor(.white)
@@ -46,8 +47,8 @@ struct AgeView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 50))
                 }
                 // button of continue
-                Button {
-                    //
+                NavigationLink {
+                    WeightView()
                 } label: {
                     Text("Continue")
                         .foregroundColor(.white)
@@ -55,9 +56,9 @@ struct AgeView: View {
                         .background(.purple)
                         .clipShape(RoundedRectangle(cornerRadius: 50))
                 }
-
             }
         }
+        .navigationBarBackButtonHidden(true)
 
     }
     

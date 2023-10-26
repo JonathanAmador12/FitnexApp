@@ -9,10 +9,14 @@ import SwiftUI
 
 struct ProfileUserView: View {
     
-    @State var fullName: String
-    @State var nickName: String
-    @State var email: String
-    @State var phoneNumber: String
+    @Environment(\.presentationMode) var presentationMode
+    
+    @State var fullName: String = ""
+    @State var nickName: String = ""
+    @State var email: String = ""
+    @State var phoneNumber: String = ""
+    @State var selectedImage: UIImage?
+    @State var isImagePickerPresented = false
     
     var body: some View {
         VStack {
@@ -27,18 +31,30 @@ struct ProfileUserView: View {
             
             VStack {
                 ZStack {
-                    Image(systemName: "person")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 200, height: 200)
-                        .foregroundColor(.white)
-                        .background(Color("ColorShadow'sFields"))
-                        .clipShape(Circle())
+                    if selectedImage != nil {
+                        if let image = selectedImage {
+                            Image(uiImage: image)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 200, height: 200)
+                                .clipShape(Circle())
+                        }
+                    } else {
+                        Image(systemName: "person")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 200, height: 200)
+                            .foregroundColor(.white)
+                            .background(Color("ColorShadow'sFields"))
+                            .clipShape(Circle())
+                    }
                     VStack {
                         Spacer()
                         HStack {
                             Spacer()
-                            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                            Button(action: {
+                                isImagePickerPresented = true
+                            }, label: {
                                 Image(systemName: "camera")
                                     .frame(width:30, height: 30)
                                     .foregroundColor(.white)
@@ -82,7 +98,9 @@ struct ProfileUserView: View {
             .padding(.bottom, 40)
             
             HStack(spacing: 16) {
-                Button(action: {}, label: {
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }, label: {
                     Text("Back")
                 })
                 .foregroundColor(.white)
@@ -100,9 +118,13 @@ struct ProfileUserView: View {
                 
             }
         }
+        .navigationBarBackButtonHidden(true)
+        .sheet(isPresented: $isImagePickerPresented) {
+            ImagePickerTwo(selectedImage: $selectedImage)
+        }
     }
 }
 
 #Preview {
-    ProfileUserView(fullName: "", nickName: "", email: "", phoneNumber: "")
+    ProfileUserView(fullName: "", nickName: "", email: "", phoneNumber: "", selectedImage: nil)
 }

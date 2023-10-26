@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct GoalUserView: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         VStack {
             VStack(alignment: .center) {
@@ -98,22 +101,28 @@ struct GoalUserView: View {
             .padding(.bottom, 70)
             
             HStack(spacing: 16) {
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }, label: {
                     Text("Back")
                         .foregroundColor(.white)
                         .frame(width: 150, height: 50)
                         .background(.purple)
                         .clipShape(RoundedRectangle(cornerRadius: 50.0))
                 })
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                
+                NavigationLink {
+                    ActivityLabelUserView()
+                } label: {
                     Text("Continue")
                         .foregroundColor(.white)
                         .frame(width: 150, height: 50)
                         .background(.purple)
                         .clipShape(RoundedRectangle(cornerRadius: 50.0))
-                })
+                }
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
