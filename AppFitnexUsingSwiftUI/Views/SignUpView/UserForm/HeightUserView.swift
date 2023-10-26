@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct HeightUserView: View {
-    @State var heightSelected: Int
+    
+    @Environment(\.presentationMode) var presentationMode
+    @State var heightSelected: Int = 1
     
     var body: some View {
         VStack {
@@ -27,7 +29,7 @@ struct HeightUserView: View {
             
             HStack(spacing: 16) {
                 Button(action: {
-                    //
+                    self.presentationMode.wrappedValue.dismiss()
                 }, label: {
                     Text("Back")
                         .foregroundColor(.white)
@@ -36,20 +38,21 @@ struct HeightUserView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 50))
                 })
                 
-                Button(action: {
-                    //
-                }, label: {
+                NavigationLink {
+                    GoalUserView()
+                } label: {
                     Text("Continue")
                         .foregroundColor(.white)
                         .frame(width: 150, height: 50)
                         .background(.purple)
                         .clipShape(RoundedRectangle(cornerRadius: 50))
-                })
+                }
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
 #Preview {
-    HeightUserView(heightSelected: 0)
+    HeightUserView(heightSelected: 1)
 }

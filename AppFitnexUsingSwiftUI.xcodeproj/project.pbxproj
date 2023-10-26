@@ -22,6 +22,8 @@
 		B41A823B2ABD140400235289 /* AgePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41A823A2ABD140400235289 /* AgePicker.swift */; };
 		B41B8D942AA029260021FF97 /* TextInputToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B8D932AA029260021FF97 /* TextInputToggleView.swift */; };
 		B42394152A8C0A0D007BD9F1 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42394142A8C0A0D007BD9F1 /* SignInView.swift */; };
+		B4281A152AEACFEF006BA8DE /* ImagePickerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4281A142AEACFEF006BA8DE /* ImagePickerTwo.swift */; };
+		B4281A172AEAE881006BA8DE /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4281A162AEAE881006BA8DE /* PickerView.swift */; };
 		B43536A92A9432A000A64CE9 /* ActiveField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43536A82A9432A000A64CE9 /* ActiveField.swift */; };
 		B4371BFD2AAA4FDD00AE11E9 /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4371BFC2AAA4FDD00AE11E9 /* TokenModel.swift */; };
 		B437B59F2AB24F5F006CDA97 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B437B59E2AB24F5F006CDA97 /* GenderView.swift */; };
@@ -71,6 +73,8 @@
 		B41A823A2ABD140400235289 /* AgePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgePicker.swift; sourceTree = "<group>"; };
 		B41B8D932AA029260021FF97 /* TextInputToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputToggleView.swift; sourceTree = "<group>"; };
 		B42394142A8C0A0D007BD9F1 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		B4281A142AEACFEF006BA8DE /* ImagePickerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerTwo.swift; sourceTree = "<group>"; };
+		B4281A162AEAE881006BA8DE /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		B43536A82A9432A000A64CE9 /* ActiveField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveField.swift; sourceTree = "<group>"; };
 		B4371BFC2AAA4FDD00AE11E9 /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
 		B437B59E2AB24F5F006CDA97 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
@@ -214,9 +218,19 @@
 			path = SignInView;
 			sourceTree = "<group>";
 		};
+		B4281A132AEACF1F006BA8DE /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				B4281A142AEACFEF006BA8DE /* ImagePickerTwo.swift */,
+				B4281A162AEAE881006BA8DE /* PickerView.swift */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
 		B437B59D2AB249DC006CDA97 /* UserForm */ = {
 			isa = PBXGroup;
 			children = (
+				B4281A132AEACF1F006BA8DE /* ImagePicker */,
 				B4F1F1462AE338E700276211 /* CustomPickerHeight */,
 				B45419002ADCC01700162816 /* CustomPickerWeight */,
 				B41A82372ABCE50800235289 /* CustomPickerAgeView */,
@@ -449,6 +463,7 @@
 				B41A823B2ABD140400235289 /* AgePicker.swift in Sources */,
 				B4F9091A2A8D983A00AC1B2F /* AppState.swift in Sources */,
 				B45EFB6A2AA460C6003D5772 /* EmailField.swift in Sources */,
+				B4281A152AEACFEF006BA8DE /* ImagePickerTwo.swift in Sources */,
 				B45418FF2ADCBD3100162816 /* WeightView.swift in Sources */,
 				B4371BFD2AAA4FDD00AE11E9 /* TokenModel.swift in Sources */,
 				B48A6ED02A8F3223003DCC3D /* SignUpView.swift in Sources */,
@@ -457,6 +472,7 @@
 				B4CA4B742A8B10CD00592575 /* OnboardingItem.swift in Sources */,
 				B41B8D942AA029260021FF97 /* TextInputToggleView.swift in Sources */,
 				B417DAD52A88633A00A05C95 /* OnboardingItemView.swift in Sources */,
+				B4281A172AEAE881006BA8DE /* PickerView.swift in Sources */,
 				B4F9091C2A8D9AD000AC1B2F /* OnboardingManager.swift in Sources */,
 				B4CA4B762A8B22BF00592575 /* OnboardingNavigationButton.swift in Sources */,
 				B417DAC42A8860A500A05C95 /* AppFitnexUsingSwiftUIApp.swift in Sources */,

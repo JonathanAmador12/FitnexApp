@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ActivityLabelUserView: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         VStack {
             VStack {
@@ -52,22 +55,28 @@ struct ActivityLabelUserView: View {
             .frame(width: 296, height: 500)
             
             HStack(spacing: 16) {
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }, label: {
                     Text("Back")
                 })
                 .foregroundColor(.white)
                 .frame(width: 150, height: 50)
                 .background(.purple)
                 .clipShape(RoundedRectangle(cornerRadius: 50.0))
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                
+                NavigationLink {
+                    ProfileUserView()
+                } label: {
                     Text("Continue")
-                })
-                .foregroundColor(.white)
-                .frame(width: 150, height: 50)
-                .background(.purple)
-                .clipShape(RoundedRectangle(cornerRadius: 50.0))
+                        .foregroundColor(.white)
+                        .frame(width: 150, height: 50)
+                        .background(.purple)
+                        .clipShape(RoundedRectangle(cornerRadius: 50.0))
+                }
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

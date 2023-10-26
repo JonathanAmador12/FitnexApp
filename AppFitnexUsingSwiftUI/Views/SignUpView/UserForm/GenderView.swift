@@ -67,9 +67,8 @@ struct GenderView: View {
                     }
                 }
             }
-            
-            Button {
-                //
+            NavigationLink {
+                AgeView()
             } label: {
                 Text("Continue")
                     .frame(width: 324, height: 51)
@@ -77,7 +76,9 @@ struct GenderView: View {
                     .background(.purple)
                     .clipShape(RoundedRectangle(cornerRadius: 50))
             }
+
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

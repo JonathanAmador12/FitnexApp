@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WeightView: View {
     
+    @Environment(\.presentationMode) var presentationMode
     @State var selectedWeight: Int = 1
     
     var body: some View {
@@ -30,7 +31,9 @@ struct WeightView: View {
             // Buttons
             HStack(spacing: 16) {
                 // button Back
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }, label: {
                     Text("Back")
                         .foregroundColor(.white)
                         .frame(width: 150, height: 50)
@@ -38,16 +41,19 @@ struct WeightView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 50))
                 })
                 // Button continue
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                NavigationLink {
+                    HeightUserView()
+                } label: {
                     Text("Continue")
                         .foregroundColor(.white)
                         .frame(width: 150, height: 50)
                         .background(.purple)
                         .clipShape(RoundedRectangle(cornerRadius: 50))
-                })
+                }
             }
             
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
