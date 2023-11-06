@@ -24,6 +24,7 @@
 		B42394152A8C0A0D007BD9F1 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42394142A8C0A0D007BD9F1 /* SignInView.swift */; };
 		B4281A152AEACFEF006BA8DE /* ImagePickerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4281A142AEACFEF006BA8DE /* ImagePickerTwo.swift */; };
 		B4281A172AEAE881006BA8DE /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4281A162AEAE881006BA8DE /* PickerView.swift */; };
+		B431BECD2AF077CB000D09A4 /* FlagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B431BECC2AF077CB000D09A4 /* FlagViewModel.swift */; };
 		B43536A92A9432A000A64CE9 /* ActiveField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43536A82A9432A000A64CE9 /* ActiveField.swift */; };
 		B4371BFD2AAA4FDD00AE11E9 /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4371BFC2AAA4FDD00AE11E9 /* TokenModel.swift */; };
 		B437B59F2AB24F5F006CDA97 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B437B59E2AB24F5F006CDA97 /* GenderView.swift */; };
@@ -45,6 +46,8 @@
 		B4CA4B762A8B22BF00592575 /* OnboardingNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA4B752A8B22BF00592575 /* OnboardingNavigationButton.swift */; };
 		B4D9786E2AE4A84A00C84762 /* HeightDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D9786D2AE4A84A00C84762 /* HeightDelegate.swift */; };
 		B4DB116F2AA9513C00037DC5 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DB116E2AA9513C00037DC5 /* Credential.swift */; };
+		B4E1A0BC2AEED1B6006013F9 /* LadaFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E1A0BB2AEED1B6006013F9 /* LadaFlags.swift */; };
+		B4E1A0BE2AEED2A0006013F9 /* FlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E1A0BD2AEED2A0006013F9 /* FlagView.swift */; };
 		B4F09ED52AE48F75002E67A3 /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F09ED42AE48F75002E67A3 /* HeightView.swift */; };
 		B4F1F1452AE30DA200276211 /* HeightUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1F1442AE30DA200276211 /* HeightUserView.swift */; };
 		B4F1F14E2AE33B6800276211 /* CustomPickerHeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1F14D2AE33B6800276211 /* CustomPickerHeightViewController.swift */; };
@@ -75,6 +78,7 @@
 		B42394142A8C0A0D007BD9F1 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		B4281A142AEACFEF006BA8DE /* ImagePickerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerTwo.swift; sourceTree = "<group>"; };
 		B4281A162AEAE881006BA8DE /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		B431BECC2AF077CB000D09A4 /* FlagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagViewModel.swift; sourceTree = "<group>"; };
 		B43536A82A9432A000A64CE9 /* ActiveField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveField.swift; sourceTree = "<group>"; };
 		B4371BFC2AAA4FDD00AE11E9 /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
 		B437B59E2AB24F5F006CDA97 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 		B4CA4B752A8B22BF00592575 /* OnboardingNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNavigationButton.swift; sourceTree = "<group>"; };
 		B4D9786D2AE4A84A00C84762 /* HeightDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightDelegate.swift; sourceTree = "<group>"; };
 		B4DB116E2AA9513C00037DC5 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		B4E1A0BB2AEED1B6006013F9 /* LadaFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LadaFlags.swift; sourceTree = "<group>"; };
+		B4E1A0BD2AEED2A0006013F9 /* FlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagView.swift; sourceTree = "<group>"; };
 		B4F09ED42AE48F75002E67A3 /* HeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightView.swift; sourceTree = "<group>"; };
 		B4F1F1442AE30DA200276211 /* HeightUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightUserView.swift; sourceTree = "<group>"; };
 		B4F1F14D2AE33B6800276211 /* CustomPickerHeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerHeightViewController.swift; sourceTree = "<group>"; };
@@ -230,6 +236,7 @@
 		B437B59D2AB249DC006CDA97 /* UserForm */ = {
 			isa = PBXGroup;
 			children = (
+				B4E1A0BF2AEED2BA006013F9 /* flag */,
 				B4281A132AEACF1F006BA8DE /* ImagePicker */,
 				B4F1F1462AE338E700276211 /* CustomPickerHeight */,
 				B45419002ADCC01700162816 /* CustomPickerWeight */,
@@ -321,6 +328,7 @@
 				B4CA4B732A8B10CD00592575 /* OnboardingItem.swift */,
 				B4DB116E2AA9513C00037DC5 /* Credential.swift */,
 				B4371BFC2AAA4FDD00AE11E9 /* TokenModel.swift */,
+				B4E1A0BB2AEED1B6006013F9 /* LadaFlags.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -330,8 +338,17 @@
 			children = (
 				B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */,
 				B44A77162AA58CC300599F11 /* SignInViewModel.swift */,
+				B431BECC2AF077CB000D09A4 /* FlagViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B4E1A0BF2AEED2BA006013F9 /* flag */ = {
+			isa = PBXGroup;
+			children = (
+				B4E1A0BD2AEED2A0006013F9 /* FlagView.swift */,
+			);
+			path = flag;
 			sourceTree = "<group>";
 		};
 		B4F1F1462AE338E700276211 /* CustomPickerHeight */ = {
@@ -445,6 +462,7 @@
 				B418C3F12AA93AB100811D9B /* logInService.swift in Sources */,
 				B444F4272AAFF7B40033A89B /* KeychainToKeepTokens.swift in Sources */,
 				B418C3F42AA9485400811D9B /* APIErrors.swift in Sources */,
+				B4E1A0BE2AEED2A0006013F9 /* FlagView.swift in Sources */,
 				B437B5A12AB2999B006CDA97 /* AgeView.swift in Sources */,
 				B419E7232AA2C38700AFC7E2 /* PasswordTextField.swift in Sources */,
 				B4F909172A8D973A00AC1B2F /* AppStateManager.swift in Sources */,
@@ -469,6 +487,8 @@
 				B48A6ED02A8F3223003DCC3D /* SignUpView.swift in Sources */,
 				B453B90E2A95CC9D00CC64D4 /* SignUpViewModel.swift in Sources */,
 				B437B59F2AB24F5F006CDA97 /* GenderView.swift in Sources */,
+				B431BECD2AF077CB000D09A4 /* FlagViewModel.swift in Sources */,
+				B4E1A0BC2AEED1B6006013F9 /* LadaFlags.swift in Sources */,
 				B4CA4B742A8B10CD00592575 /* OnboardingItem.swift in Sources */,
 				B41B8D942AA029260021FF97 /* TextInputToggleView.swift in Sources */,
 				B417DAD52A88633A00A05C95 /* OnboardingItemView.swift in Sources */,
