@@ -17,6 +17,9 @@ struct ProfileUserView: View {
     @State var phoneNumber: String = ""
     @State var selectedImage: UIImage?
     @State var isImagePickerPresented = false
+    @State var flagEmoji: String = "🇨🇦"
+    @State var isSheetPresent = false
+    @State var selectedFlag: Flag = Flag(nameFlag: "México", imageFlag: "🇸🇳", ladaNumber: 55)
     
     var body: some View {
         VStack {
@@ -88,11 +91,25 @@ struct ProfileUserView: View {
                     .background(Color("ColorShadow'sFields"))
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                 
-                TextField("\("🇨🇦")   phone number", text: $phoneNumber)
-                    .padding(.horizontal, 20)
-                    .frame(width: 324, height: 41)
-                    .background(Color("ColorShadow'sFields"))
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                HStack(spacing: 10) {
+                    Button(action: {
+                        isSheetPresent = true
+                    }, label: {
+                        HStack(spacing: 5) {
+                            Text("\(selectedFlag.imageFlag)")
+                            Image(systemName: "chevron.down")
+                                .foregroundColor(.gray)
+                        }
+                    })
+                    .sheet(isPresented: $isSheetPresent) {
+                        FlagView(searchQuery: "", isSheetPresent: $isSheetPresent, selectedFlag: $selectedFlag)
+                    }
+                    TextField("phone number", text: $phoneNumber)
+                }
+                .padding(.horizontal, 20)
+                .frame(width: 324, height: 41)
+                .background(Color("ColorShadow'sFields"))
+                .clipShape(RoundedRectangle(cornerRadius: 10))
             }
             .frame(width: 324, height: 250)
             .padding(.bottom, 40)
@@ -126,5 +143,5 @@ struct ProfileUserView: View {
 }
 
 #Preview {
-    ProfileUserView(fullName: "", nickName: "", email: "", phoneNumber: "", selectedImage: nil)
+    ProfileUserView(fullName: "", nickName: "", email: "", phoneNumber: "", selectedImage: nil, selectedFlag: Flag(nameFlag: "", imageFlag: "", ladaNumber: 0))
 }
