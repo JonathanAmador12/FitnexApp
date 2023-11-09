@@ -8,10 +8,20 @@
 import Foundation
 import Combine
 class SignUpViewModel: ObservableObject {
+    
     @Published var activeField: SignUpFormField?
     @Published var email: String = ""
     @Published var password: String = ""
     @Published var confirmPassword: String = ""
+    
+    
+    func isActivateSignUp() -> Bool {
+        if !isEmpyEmail() && isValidEmail(email: email) && !isEmptyPassword() && isValidPassword(password: password) && !isEmptyPasswordConfirmation() && !ArePasswordAndPasswordConfirmationTheSame(password: password, confirmPassword: confirmPassword) {
+            return true
+        } else {
+            return false
+        }
+    }
     
     // return message if email has been filled
     func getEmailError() -> String? {

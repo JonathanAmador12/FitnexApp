@@ -111,13 +111,15 @@ struct SignUpView: View {
                         .frame(width: geometry.size.width / 3, height: geometry.size.height / 3)
                         VStack(spacing: 20) {
                             Button {
+                                print("Arnoll")
                                 emailMessageError = signUpViewModel.getEmailError()
                                 passwordMessageError = signUpViewModel.getPasswordError()
                                 confirmationPasswordError = signUpViewModel.getPasswordConfirmationError()
-                                isActivateSignUp = true
+                                isActivateSignUp = signUpViewModel.isActivateSignUp()
                             } label: {
-                                NavigationLink(destination: GenderView()) {
-                                    Text("Sign Up")
+                                Text("Sign Up")
+                                NavigationLink("", isActive: $isActivateSignUp) {
+                                    EmptyView()
                                 }
                             }
                             .foregroundColor(.white)
