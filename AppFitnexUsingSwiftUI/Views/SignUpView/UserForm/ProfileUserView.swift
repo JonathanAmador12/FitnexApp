@@ -10,6 +10,7 @@ import SwiftUI
 struct ProfileUserView: View {
     
     @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var appStateManager: AppStateManger
     
     @State var fullName: String = ""
     @State var nickName: String = ""
@@ -125,7 +126,9 @@ struct ProfileUserView: View {
                 .background(.purple)
                 .clipShape(RoundedRectangle(cornerRadius: 50))
                 
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: {
+                    appStateManager.finishSignUp()
+                }, label: {
                     Text("Continue")
                 })
                 .foregroundColor(.white)
