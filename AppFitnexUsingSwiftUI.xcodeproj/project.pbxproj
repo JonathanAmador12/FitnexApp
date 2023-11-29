@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B403851E2AE5B56000A6EB62 /* HeightSelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B403851D2AE5B56000A6EB62 /* HeightSelectedView.swift */; };
+		B40C52312AFC7DE7008E9561 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C52302AFC7DE7008E9561 /* ForgotPasswordView.swift */; };
 		B40EFABB2AE6F6190074D0FE /* GoalUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EFABA2AE6F6190074D0FE /* GoalUserView.swift */; };
 		B40EFABD2AE72D370074D0FE /* ActivityLabelUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EFABC2AE72D370074D0FE /* ActivityLabelUserView.swift */; };
 		B40EFABF2AE7362E0074D0FE /* ProfileUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EFABE2AE7362E0074D0FE /* ProfileUserView.swift */; };
@@ -31,6 +32,7 @@
 		B437B5A12AB2999B006CDA97 /* AgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B437B5A02AB2999B006CDA97 /* AgeView.swift */; };
 		B444F4272AAFF7B40033A89B /* KeychainToKeepTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = B444F4262AAFF7B40033A89B /* KeychainToKeepTokens.swift */; };
 		B44A77172AA58CC300599F11 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A77162AA58CC300599F11 /* SignInViewModel.swift */; };
+		B44FA2882B08649900D4A8CA /* DigitTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44FA2872B08649900D4A8CA /* DigitTextField.swift */; };
 		B453B90E2A95CC9D00CC64D4 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */; };
 		B45418FF2ADCBD3100162816 /* WeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45418FE2ADCBD3100162816 /* WeightView.swift */; };
 		B45419042ADCC12D00162816 /* CustomPickerWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45419032ADCC12D00162816 /* CustomPickerWeightViewController.swift */; };
@@ -39,6 +41,7 @@
 		B4719EB32AA104C700A658ED /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4719EB22AA104C700A658ED /* LogInView.swift */; };
 		B47851BD2AD4F4AF00F54D93 /* ProtocolPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47851BC2AD4F4AF00F54D93 /* ProtocolPicker.swift */; };
 		B48A6ED02A8F3223003DCC3D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48A6ECF2A8F3223003DCC3D /* SignUpView.swift */; };
+		B48F6BFB2B02F4EC005BA149 /* ResetCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F6BFA2B02F4EC005BA149 /* ResetCodeView.swift */; };
 		B4B3092E2AE19CAC00D97711 /* WeightSelectedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B3092D2AE19CAC00D97711 /* WeightSelectedRow.swift */; };
 		B4B595152ADF000E00A59559 /* WeightSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B595142ADF000E00A59559 /* WeightSelectionDelegate.swift */; };
 		B4B595192ADF050700A59559 /* WeightPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B595182ADF050700A59559 /* WeightPicker.swift */; };
@@ -48,6 +51,7 @@
 		B4DB116F2AA9513C00037DC5 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DB116E2AA9513C00037DC5 /* Credential.swift */; };
 		B4E1A0BC2AEED1B6006013F9 /* LadaFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E1A0BB2AEED1B6006013F9 /* LadaFlags.swift */; };
 		B4E1A0BE2AEED2A0006013F9 /* FlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E1A0BD2AEED2A0006013F9 /* FlagView.swift */; };
+		B4EEE4222B05AE3C00E04BFD /* ResetCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EEE4212B05AE3C00E04BFD /* ResetCodeViewModel.swift */; };
 		B4F09ED52AE48F75002E67A3 /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F09ED42AE48F75002E67A3 /* HeightView.swift */; };
 		B4F1F1452AE30DA200276211 /* HeightUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1F1442AE30DA200276211 /* HeightUserView.swift */; };
 		B4F1F14E2AE33B6800276211 /* CustomPickerHeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1F14D2AE33B6800276211 /* CustomPickerHeightViewController.swift */; };
@@ -61,6 +65,7 @@
 
 /* Begin PBXFileReference section */
 		B403851D2AE5B56000A6EB62 /* HeightSelectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightSelectedView.swift; sourceTree = "<group>"; };
+		B40C52302AFC7DE7008E9561 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		B40EFABA2AE6F6190074D0FE /* GoalUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalUserView.swift; sourceTree = "<group>"; };
 		B40EFABC2AE72D370074D0FE /* ActivityLabelUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLabelUserView.swift; sourceTree = "<group>"; };
 		B40EFABE2AE7362E0074D0FE /* ProfileUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserView.swift; sourceTree = "<group>"; };
@@ -85,6 +90,7 @@
 		B437B5A02AB2999B006CDA97 /* AgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		B444F4262AAFF7B40033A89B /* KeychainToKeepTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainToKeepTokens.swift; sourceTree = "<group>"; };
 		B44A77162AA58CC300599F11 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		B44FA2872B08649900D4A8CA /* DigitTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitTextField.swift; sourceTree = "<group>"; };
 		B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		B45418FE2ADCBD3100162816 /* WeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightView.swift; sourceTree = "<group>"; };
 		B45419032ADCC12D00162816 /* CustomPickerWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerWeightViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +99,7 @@
 		B4719EB22AA104C700A658ED /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		B47851BC2AD4F4AF00F54D93 /* ProtocolPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolPicker.swift; sourceTree = "<group>"; };
 		B48A6ECF2A8F3223003DCC3D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		B48F6BFA2B02F4EC005BA149 /* ResetCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetCodeView.swift; sourceTree = "<group>"; };
 		B4B3092D2AE19CAC00D97711 /* WeightSelectedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightSelectedRow.swift; sourceTree = "<group>"; };
 		B4B595142ADF000E00A59559 /* WeightSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightSelectionDelegate.swift; sourceTree = "<group>"; };
 		B4B595182ADF050700A59559 /* WeightPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightPicker.swift; sourceTree = "<group>"; };
@@ -102,6 +109,7 @@
 		B4DB116E2AA9513C00037DC5 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		B4E1A0BB2AEED1B6006013F9 /* LadaFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LadaFlags.swift; sourceTree = "<group>"; };
 		B4E1A0BD2AEED2A0006013F9 /* FlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagView.swift; sourceTree = "<group>"; };
+		B4EEE4212B05AE3C00E04BFD /* ResetCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetCodeViewModel.swift; sourceTree = "<group>"; };
 		B4F09ED42AE48F75002E67A3 /* HeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightView.swift; sourceTree = "<group>"; };
 		B4F1F1442AE30DA200276211 /* HeightUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightUserView.swift; sourceTree = "<group>"; };
 		B4F1F14D2AE33B6800276211 /* CustomPickerHeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerHeightViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +132,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B40C522F2AFC7D85008E9561 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				B40C52302AFC7DE7008E9561 /* ForgotPasswordView.swift */,
+				B48F6BFA2B02F4EC005BA149 /* ResetCodeView.swift */,
+				B44FA2872B08649900D4A8CA /* DigitTextField.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
 		B417DAB72A8860A500A05C95 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +189,7 @@
 		B417DAD12A88620300A05C95 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B40C522F2AFC7D85008E9561 /* ForgotPassword */,
 				B45EFB682AA45FFD003D5772 /* Fields */,
 				B49FE8F62A97F18300493ABE /* LogIn */,
 				B46AAFF82A8FDEBA006D32A8 /* Buttons */,
@@ -336,6 +355,7 @@
 		B4CA4B722A8B0F3300592575 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B4EEE4202B05ADEC00E04BFD /* ForgotPasswordViewModel */,
 				B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */,
 				B44A77162AA58CC300599F11 /* SignInViewModel.swift */,
 				B431BECC2AF077CB000D09A4 /* FlagViewModel.swift */,
@@ -349,6 +369,14 @@
 				B4E1A0BD2AEED2A0006013F9 /* FlagView.swift */,
 			);
 			path = flag;
+			sourceTree = "<group>";
+		};
+		B4EEE4202B05ADEC00E04BFD /* ForgotPasswordViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4EEE4212B05AE3C00E04BFD /* ResetCodeViewModel.swift */,
+			);
+			path = ForgotPasswordViewModel;
 			sourceTree = "<group>";
 		};
 		B4F1F1462AE338E700276211 /* CustomPickerHeight */ = {
@@ -466,9 +494,11 @@
 				B437B5A12AB2999B006CDA97 /* AgeView.swift in Sources */,
 				B419E7232AA2C38700AFC7E2 /* PasswordTextField.swift in Sources */,
 				B4F909172A8D973A00AC1B2F /* AppStateManager.swift in Sources */,
+				B40C52312AFC7DE7008E9561 /* ForgotPasswordView.swift in Sources */,
 				B40EFABD2AE72D370074D0FE /* ActivityLabelUserView.swift in Sources */,
 				B44A77172AA58CC300599F11 /* SignInViewModel.swift in Sources */,
 				B4F1F14E2AE33B6800276211 /* CustomPickerHeightViewController.swift in Sources */,
+				B48F6BFB2B02F4EC005BA149 /* ResetCodeView.swift in Sources */,
 				B43536A92A9432A000A64CE9 /* ActiveField.swift in Sources */,
 				B403851E2AE5B56000A6EB62 /* HeightSelectedView.swift in Sources */,
 				B4DB116F2AA9513C00037DC5 /* Credential.swift in Sources */,
@@ -481,6 +511,7 @@
 				B41A823B2ABD140400235289 /* AgePicker.swift in Sources */,
 				B4F9091A2A8D983A00AC1B2F /* AppState.swift in Sources */,
 				B45EFB6A2AA460C6003D5772 /* EmailField.swift in Sources */,
+				B4EEE4222B05AE3C00E04BFD /* ResetCodeViewModel.swift in Sources */,
 				B4281A152AEACFEF006BA8DE /* ImagePickerTwo.swift in Sources */,
 				B45418FF2ADCBD3100162816 /* WeightView.swift in Sources */,
 				B4371BFD2AAA4FDD00AE11E9 /* TokenModel.swift in Sources */,
@@ -489,6 +520,7 @@
 				B437B59F2AB24F5F006CDA97 /* GenderView.swift in Sources */,
 				B431BECD2AF077CB000D09A4 /* FlagViewModel.swift in Sources */,
 				B4E1A0BC2AEED1B6006013F9 /* LadaFlags.swift in Sources */,
+				B44FA2882B08649900D4A8CA /* DigitTextField.swift in Sources */,
 				B4CA4B742A8B10CD00592575 /* OnboardingItem.swift in Sources */,
 				B41B8D942AA029260021FF97 /* TextInputToggleView.swift in Sources */,
 				B417DAD52A88633A00A05C95 /* OnboardingItemView.swift in Sources */,
