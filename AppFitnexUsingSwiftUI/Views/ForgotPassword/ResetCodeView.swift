@@ -45,32 +45,13 @@ struct ResetCodeView: View {
                 
                 // SecurityFields
                 HStack {
-                    
                     ForEach(0..<4, id: \.self) {index in
-                        TextField("", text: $digitValues[index], onEditingChanged: { edited in
-                            oldDigitValues[index] = digitValues[index]
-                        })
+                        DigitField(index: index)
                             .multilineTextAlignment(.center)
                             .keyboardType(.numberPad)
                             .frame(width: 50, height: 50)
                             .background(focusField == approachFocusField(index: index) ? .purple.opacity(0.2) : .gray.opacity(0.2))
                             .focused($focusField, equals: approachFocusField(index: index))
-                            .onChange(of: digitValues[index]) {newValue in
-                                if newValue.count > 1 {
-                                    if String(newValue[newValue.startIndex]) == oldDigitValues[index] {
-                                        digitValues[index] = String(newValue.suffix(1))
-                                    } else {
-                                        digitValues[index] = String(newValue.prefix(1))
-                                    }
-                                }
-                                    
-                                if !newValue.isEmpty {
-                                    moveForwardFocusField(index: index)
-                                } else {
-                                    moveBackwardFocusField(returnToPreviouField: index)
-                                }
-                            }
-                        
                     }
                     
                 }
@@ -127,6 +108,51 @@ struct ResetCodeView: View {
             return .d4
         default:
             return nil
+        }
+    }
+    
+    @ViewBuilder
+    func DigitField(index: Int) -> some View {
+        if #available(iOS 17.0, *) {
+            TextField("", text: $digitValues[index])
+                .onChange(of: digitValues[index]) { oldValue, newValue in
+                    digitValues[index] = getLastValue(
+                        oldValue: oldValue,
+                        newValue: newValue
+                    )
+                    navigateToNextField(index: index, newValue: newValue)
+                }
+        } else {
+            TextField("", text: $digitValues[index], onEditingChanged: { edited in
+                oldDigitValues[index] = digitValues[index]
+            })
+            .onChange(of: digitValues[index]) {newValue in
+                digitValues[index] = getLastValue(
+                    oldValue: oldDigitValues[index],
+                    newValue: newValue
+                )
+                navigateToNextField(index: index, newValue: newValue)
+            }
+        }
+    }
+    
+    func getLastValue(oldValue: String, newValue: String) -> String {
+        var lastValue = newValue
+        if newValue.count > 1 {
+            if String(newValue[newValue.startIndex]) == oldValue {
+                lastValue = String(newValue.suffix(1))
+            } else {
+                lastValue = String(newValue.prefix(1))
+            }
+        }
+        return lastValue
+    }
+    
+    func navigateToNextField(index: Int, newValue: String) {
+        if !newValue.isEmpty {
+            moveForwardFocusField(index: index)
+        } else {
+            moveBackwardFocusField(returnToPreviouField: index)
         }
     }
     
