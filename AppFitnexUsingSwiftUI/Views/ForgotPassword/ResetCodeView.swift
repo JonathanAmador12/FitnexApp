@@ -38,7 +38,8 @@ struct ResetCodeView: View {
                 .frame(width: 219, height: 30)
                 Spacer()
             }
-            .padding(.bottom, 30)
+
+            Spacer()
             
             VStack(spacing: 32) {
                 Text("Code has been send to + 1111********99")
@@ -64,9 +65,18 @@ struct ResetCodeView: View {
                     Text("58s")
                 }
             }
-            .padding(.top, 200)
-            
+
             Spacer()
+
+            Button {
+                //
+            } label: {
+                Text("Verify")
+                    .foregroundStyle(.white)
+                    .frame(width: 324, height: 49)
+                    .background(.purple)
+                    .clipShape(RoundedRectangle(cornerRadius: 50))
+            }
         }
     }
     
