@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ForgotPasswordView: View {
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     @State var isActiveMessageButton: Bool = false
     @State var isActiveEmailButton: Bool = false
     
@@ -16,7 +18,9 @@ struct ForgotPasswordView: View {
         VStack {
             HStack {
                 HStack {
-                    Button(action: {}, label: {
+                    Button(action: {
+                        presentationMode.wrappedValue.dismiss()
+                    }, label: {
                         Image(systemName: "arrow.backward")
                     })
                     Text("Forgot Password")
@@ -91,14 +95,18 @@ struct ForgotPasswordView: View {
             }
             .padding(.bottom, 70)
             
-            Button(action: {}, label: {
+            NavigationLink {
+                ResetCodeView()
+            } label: {
                 Text("Sign in with password")
-            })
+            }
             .foregroundColor(.white)
             .frame(width: 324, height: 49)
             .background(.purple)
             .clipShape(RoundedRectangle(cornerRadius: 50))
+            
         }
+        .navigationBarBackButtonHidden(true)
         Spacer()
     }
 }

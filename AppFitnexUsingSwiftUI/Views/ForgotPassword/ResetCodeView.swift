@@ -7,7 +7,13 @@
 
 import SwiftUI
 
+struct Dog {
+    var name: String = "arnol"
+    var age: Int = 1
+}
+
 struct ResetCodeView: View {
+    
     enum FormFields: Hashable {
         case d1
         case d2
@@ -17,22 +23,23 @@ struct ResetCodeView: View {
     
     @ObservedObject var vm = ResetCodeViewModel()
     @FocusState private var focusField: FormFields?
+    @Environment(\.presentationMode) var presentationMode
     
-    @State var oldDigitOne: String = ""
-    @State var oldDigitTwo: String = ""
-    @State var oldDigitThree: String = ""
-    @State var oldDigitFour: String = ""
-    
-    @State var digitOne: String = " "
-    @State var digitTwo: String = " "
-    @State var digitThird: String = " "
-    @State var digitFourth: String = " "
+    @State var digitValues: [String] = [" ", " ", " ", " "]
+    @State var oldDigitValues: [String] = [" ", " ", " ", " "]
+
+//    init() {
+//        digitValues = [" ", " ", " ", " "]
+//        oldDigitValues = ["", "", "", ""]
+//    }
     
     var body: some View {
         VStack {
             HStack {
                 HStack {
-                    Button(action: {}, label: {
+                    Button(action: {
+                        presentationMode.wrappedValue.dismiss()
+                    }, label: {
                         Image(systemName: "arrow.backward")
                     })
                     Text("Forgot Password")
@@ -40,125 +47,23 @@ struct ResetCodeView: View {
                 .frame(width: 219, height: 30)
                 Spacer()
             }
-            .padding(.bottom, 30)
+
+            Spacer()
             
             VStack(spacing: 32) {
                 Text("Code has been send to + 1111********99")
                 
                 // SecurityFields
                 HStack {
+                    ForEach(0..<4, id: \.self) {index in
+                        DigitField(index: index)
+                            .multilineTextAlignment(.center)
+                            .keyboardType(.numberPad)
+                            .frame(width: 50, height: 50)
+                            .background(focusField == approachFocusField(index: index) ? .purple.opacity(0.2) : .gray.opacity(0.2))
+                            .focused($focusField, equals: approachFocusField(index: index))
+                    }
                     
-                    TextField("", text: $digitOne, onEditingChanged: { edited in
-                        oldDigitOne = digitOne
-                    })
-                        .multilineTextAlignment(.center)
-                        .keyboardType(.numberPad)
-                        .frame(width: 50, height: 50)
-                        .background(focusField == .d1 ? .purple.opacity(0.2) : .gray.opacity(0.2))
-                        .focused($focusField, equals: .d1)
-                        .onChange(of: digitOne) { newValue in
-                            if newValue.count > 1 {
-                                // eliminar el valor anterior
-                                if String(newValue[newValue.startIndex])  == oldDigitOne {
-                                    // "21"
-                                    digitOne = String(newValue[newValue.index(before: newValue.endIndex)])
-                                } else {
-                                    digitOne = String(newValue[newValue.startIndex])
-                                }
-                            }
-                            
-                            if !newValue.isEmpty {
-                                moveForwardFocusField(currentField: .d1)
-                            }else {
-                                moveBackwardFocusField(returnToPreviouField: .d1)
-                            }
-                            
-                        }
-                    
-                    TextField("", text: $digitTwo, onEditingChanged: { edited in
-                        oldDigitTwo = digitTwo
-                    })
-                        .multilineTextAlignment(.center)
-                        .keyboardType(.numberPad)
-                        .frame(width: 50, height: 50)
-                        .background(focusField == .d2 ? .purple.opacity(0.2) : .gray.opacity(0.2))
-                        .focused($focusField, equals: .d2)
-                        .onChange(of: digitTwo) { newValue in
-                            if newValue.count > 1 {
-                                // eliminar el valor anterior
-                                if String(newValue[newValue.startIndex])  == oldDigitTwo {
-                                    digitTwo = String(newValue[newValue.index(before: newValue.endIndex)])
-                                } else {
-                                    digitTwo = String(newValue[newValue.startIndex])
-                                }
-                            }
-                            
-                            if !newValue.isEmpty {
-                                moveForwardFocusField(currentField: .d2)
-                            } else {
-                                moveBackwardFocusField(returnToPreviouField: .d2)
-                            }
-                        }
-                    
-                    TextField("", text: $digitThird, onEditingChanged: { edited in
-                        oldDigitThree = digitThird
-                    })
-                        .multilineTextAlignment(.center)
-                        .keyboardType(.numberPad)
-                        .frame(width: 50, height: 50)
-                        .background(focusField == .d3 ? .purple.opacity(0.2) : .gray.opacity(0.2))
-                        .focused($focusField, equals: .d3)
-                        .onChange(of: digitThird) { newValue in
-                            if newValue.count > 1 {
-                                // eliminar el valor anterior
-                                if String(newValue[newValue.startIndex])  == oldDigitThree {
-                                    // "21"
-                                    digitThird = String(newValue[newValue.index(before: newValue.endIndex)])
-                                } else {
-                                    digitThird = String(newValue[newValue.startIndex])
-                                }
-                            }
-                            
-                            if !newValue.isEmpty {
-                                moveForwardFocusField(currentField: .d3)
-                            }else {
-                                moveBackwardFocusField(returnToPreviouField: .d3)
-                            }
-                        }
-                    
-                    TextField("", text: $digitFourth, onEditingChanged: { edited in
-                        oldDigitFour = digitFourth
-                    })
-                        .multilineTextAlignment(.center)
-                        .keyboardType(.numberPad)
-                        .frame(width: 50, height: 50)
-                        .background(focusField == .d4 ? .purple.opacity(0.2) : .gray.opacity(0.2))
-                        .focused($focusField, equals: .d4)
-                        .onChange(of: digitFourth) {newValue in
-                            if newValue.count > 1 {
-                                if String(newValue[newValue.startIndex]) == oldDigitFour {
-                                    digitFourth = String(newValue[newValue.index(before: newValue.endIndex)])
-                                } else {
-                                    digitFourth = String(newValue[newValue.startIndex])
-                                }
-                            }
-                            
-                            if !newValue.isEmpty {
-                                moveForwardFocusField(currentField: .d4)
-                            } else {
-                                moveBackwardFocusField(returnToPreviouField: .d4)
-                            }
-                        }
-                    
-//                    ForEach(0..<4, id: \.self) {index in
-//                        DigitTextField(ditit: binding(index: index))
-//                            .background(focusColorField == index ? .purple.opacity(0.2) : .gray.opacity(0.2))
-//                            .focused($focusField, equals: indexToFocusField(index: index))
-//                            .focused($focusColorField, equals: index)
-//                            .onChange(of: indexToVariable(index: index)) { _ in
-//                                moveToNextField(index: index)
-//                            }
-//                    }
                 }
                 .onAppear {
                     focusField = .d1
@@ -169,37 +74,109 @@ struct ResetCodeView: View {
                     Text("58s")
                 }
             }
-            .padding(.top, 200)
-            
+
             Spacer()
+            
+            NavigationLink {
+                CreateNewPassword()
+            } label: {
+                Text("Verify")
+                    .foregroundStyle(.white)
+                    .frame(width: 324, height: 49)
+                    .background(.purple)
+                    .clipShape(RoundedRectangle(cornerRadius: 50))
+            }
+            
         }
+        .navigationBarBackButtonHidden(true)
     }
     
-    private func moveForwardFocusField(currentField: FormFields) -> Void {
-        switch currentField {
-        case .d1:
+    private func moveForwardFocusField(index: Int) -> Void {
+        switch index {
+        case 0:
             focusField = .d2
-        case .d2:
+        case 1:
             focusField = .d3
-        case .d3:
+        case 2:
             focusField = .d4
         default:
             focusField = nil
         }
     }
     
-    private func moveBackwardFocusField(returnToPreviouField: FormFields) -> Void {
+    private func moveBackwardFocusField(returnToPreviouField: Int) -> Void {
         switch returnToPreviouField {
-        case .d4:
+        case 3:
             focusField = .d3
-        case .d3:
+        case 2:
             focusField = .d2
-        case .d2:
+        case 1:
             focusField = .d1
         default:
             focusField = nil
         }
     }
+    
+    private func approachFocusField(index: Int) -> FormFields? {
+        switch index {
+        case 0:
+            return .d1
+        case 1:
+            return .d2
+        case 2:
+            return .d3
+        case 3:
+            return .d4
+        default:
+            return nil
+        }
+    }
+    
+    @ViewBuilder
+    func DigitField(index: Int) -> some View {
+        if #available(iOS 17.0, *) {
+            TextField("", text: $digitValues[index])
+                .onChange(of: digitValues[index]) { oldValue, newValue in
+                    digitValues[index] = getLastValue(
+                        oldValue: oldValue,
+                        newValue: newValue
+                    )
+                    navigateToNextField(index: index, newValue: newValue)
+                }
+        } else {
+            TextField("", text: $digitValues[index], onEditingChanged: { edited in
+                oldDigitValues[index] = digitValues[index]
+            })
+            .onChange(of: digitValues[index]) {newValue in
+                digitValues[index] = getLastValue(
+                    oldValue: oldDigitValues[index],
+                    newValue: newValue
+                )
+                navigateToNextField(index: index, newValue: newValue)
+            }
+        }
+    }
+    
+    func getLastValue(oldValue: String, newValue: String) -> String {
+        var lastValue = newValue
+        if newValue.count > 1 {
+            if String(newValue[newValue.startIndex]) == oldValue {
+                lastValue = String(newValue.suffix(1))
+            } else {
+                lastValue = String(newValue.prefix(1))
+            }
+        }
+        return lastValue
+    }
+    
+    func navigateToNextField(index: Int, newValue: String) {
+        if !newValue.isEmpty {
+            moveForwardFocusField(index: index)
+        } else {
+            moveBackwardFocusField(returnToPreviouField: index)
+        }
+    }
+    
 }
 
 #Preview {
