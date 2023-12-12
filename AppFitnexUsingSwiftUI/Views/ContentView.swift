@@ -12,14 +12,16 @@ struct ContentView: View {
     @EnvironmentObject var appStateManager: AppStateManger
 
     var body: some View {
-//        if appStateManager.appState == .onboarding {
-//            OnboardingView()
-//        } else if appStateManager.appState == .signIn {
-//            SignInView()
-//        } else if appStateManager.appState == .signUp {
-//            SignUpView()
+        if appStateManager.appState == .onboarding {
+            OnboardingView()
+        } else if appStateManager.appState == .signIn {
+            SignInView()
+        } else if appStateManager.appState == .signUp {
+            SignUpView()
+        } 
+//        NavigationView {
+//            LogInView()
 //        }
-        ResetCodeView()
     }
     
 }

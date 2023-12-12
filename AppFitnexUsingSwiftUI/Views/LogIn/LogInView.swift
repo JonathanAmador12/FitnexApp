@@ -13,6 +13,7 @@ struct LogInView: View {
     
     @State var emailErrorMessage: String?
     @State var passwordErrorMessage: String?
+    @State var isActiveForgotPasswordView: Bool = false
     
     var body: some View {
         GeometryReader { geometry in
@@ -94,14 +95,14 @@ struct LogInView: View {
                     .background(.purple, ignoresSafeAreaEdges: [])
                     .clipShape(RoundedRectangle(cornerRadius: 25))
                     
-                    Button {
-                        //
+                    NavigationLink {
+                        ForgotPasswordView()
                     } label: {
                         Text("Forgot the password")
                             .foregroundColor(.purple)
                             .frame(width: 250)
                     }
-                    
+
                     ZStack {
                         Divider()
                             .frame(width: 500, height: 2)
@@ -125,6 +126,7 @@ struct LogInView: View {
                         }
 
                     }
+                   
                 }
                 .frame(width: geometry.size.width / 4, height: geometry.size.height / 4)
                 
@@ -146,12 +148,16 @@ struct LogInView: View {
 
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
+            
         }
     }
 }
 
 struct LogInView_Previews: PreviewProvider {
     static var previews: some View {
-        LogInView()
+        NavigationView {
+            LogInView()
+        }
+        
     }
 }

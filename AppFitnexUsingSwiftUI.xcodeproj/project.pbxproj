@@ -32,16 +32,20 @@
 		B437B5A12AB2999B006CDA97 /* AgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B437B5A02AB2999B006CDA97 /* AgeView.swift */; };
 		B444F4272AAFF7B40033A89B /* KeychainToKeepTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = B444F4262AAFF7B40033A89B /* KeychainToKeepTokens.swift */; };
 		B44A77172AA58CC300599F11 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A77162AA58CC300599F11 /* SignInViewModel.swift */; };
+		B44AF9BA2B22BE3100B82411 /* CongratulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44AF9B92B22BE3100B82411 /* CongratulationView.swift */; };
+		B44AF9BD2B22C84A00B82411 /* CreateNewPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44AF9BC2B22C84A00B82411 /* CreateNewPasswordViewModel.swift */; };
 		B44FA2882B08649900D4A8CA /* DigitTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44FA2872B08649900D4A8CA /* DigitTextField.swift */; };
 		B453B90E2A95CC9D00CC64D4 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */; };
 		B45418FF2ADCBD3100162816 /* WeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45418FE2ADCBD3100162816 /* WeightView.swift */; };
 		B45419042ADCC12D00162816 /* CustomPickerWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45419032ADCC12D00162816 /* CustomPickerWeightViewController.swift */; };
+		B454AA8D2B1FA46200CF73D8 /* CreateNewPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = B454AA8C2B1FA46200CF73D8 /* CreateNewPassword.swift */; };
 		B45EFB6A2AA460C6003D5772 /* EmailField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45EFB692AA460C6003D5772 /* EmailField.swift */; };
 		B46AAFFA2A8FDEDB006D32A8 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AAFF92A8FDEDB006D32A8 /* ButtonView.swift */; };
 		B4719EB32AA104C700A658ED /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4719EB22AA104C700A658ED /* LogInView.swift */; };
 		B47851BD2AD4F4AF00F54D93 /* ProtocolPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47851BC2AD4F4AF00F54D93 /* ProtocolPicker.swift */; };
 		B48A6ED02A8F3223003DCC3D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48A6ECF2A8F3223003DCC3D /* SignUpView.swift */; };
 		B48F6BFB2B02F4EC005BA149 /* ResetCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F6BFA2B02F4EC005BA149 /* ResetCodeView.swift */; };
+		B48FFD222B239CAD007A5F2D /* backgroundGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48FFD212B239CAD007A5F2D /* backgroundGrey.swift */; };
 		B4B3092E2AE19CAC00D97711 /* WeightSelectedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B3092D2AE19CAC00D97711 /* WeightSelectedRow.swift */; };
 		B4B595152ADF000E00A59559 /* WeightSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B595142ADF000E00A59559 /* WeightSelectionDelegate.swift */; };
 		B4B595192ADF050700A59559 /* WeightPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B595182ADF050700A59559 /* WeightPicker.swift */; };
@@ -90,16 +94,20 @@
 		B437B5A02AB2999B006CDA97 /* AgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		B444F4262AAFF7B40033A89B /* KeychainToKeepTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainToKeepTokens.swift; sourceTree = "<group>"; };
 		B44A77162AA58CC300599F11 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		B44AF9B92B22BE3100B82411 /* CongratulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationView.swift; sourceTree = "<group>"; };
+		B44AF9BC2B22C84A00B82411 /* CreateNewPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPasswordViewModel.swift; sourceTree = "<group>"; };
 		B44FA2872B08649900D4A8CA /* DigitTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitTextField.swift; sourceTree = "<group>"; };
 		B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		B45418FE2ADCBD3100162816 /* WeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightView.swift; sourceTree = "<group>"; };
 		B45419032ADCC12D00162816 /* CustomPickerWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerWeightViewController.swift; sourceTree = "<group>"; };
+		B454AA8C2B1FA46200CF73D8 /* CreateNewPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPassword.swift; sourceTree = "<group>"; };
 		B45EFB692AA460C6003D5772 /* EmailField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailField.swift; sourceTree = "<group>"; };
 		B46AAFF92A8FDEDB006D32A8 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		B4719EB22AA104C700A658ED /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		B47851BC2AD4F4AF00F54D93 /* ProtocolPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolPicker.swift; sourceTree = "<group>"; };
 		B48A6ECF2A8F3223003DCC3D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		B48F6BFA2B02F4EC005BA149 /* ResetCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetCodeView.swift; sourceTree = "<group>"; };
+		B48FFD212B239CAD007A5F2D /* backgroundGrey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backgroundGrey.swift; sourceTree = "<group>"; };
 		B4B3092D2AE19CAC00D97711 /* WeightSelectedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightSelectedRow.swift; sourceTree = "<group>"; };
 		B4B595142ADF000E00A59559 /* WeightSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightSelectionDelegate.swift; sourceTree = "<group>"; };
 		B4B595182ADF050700A59559 /* WeightPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightPicker.swift; sourceTree = "<group>"; };
@@ -189,6 +197,7 @@
 		B417DAD12A88620300A05C95 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B454AA8B2B1FA3D500CF73D8 /* Create a new password */,
 				B40C522F2AFC7D85008E9561 /* ForgotPassword */,
 				B45EFB682AA45FFD003D5772 /* Fields */,
 				B49FE8F62A97F18300493ABE /* LogIn */,
@@ -279,6 +288,14 @@
 			path = Keychain;
 			sourceTree = "<group>";
 		};
+		B44AF9BB2B22C7B900B82411 /* CreateNewPasswordModel */ = {
+			isa = PBXGroup;
+			children = (
+				B44AF9BC2B22C84A00B82411 /* CreateNewPasswordViewModel.swift */,
+			);
+			path = CreateNewPasswordModel;
+			sourceTree = "<group>";
+		};
 		B45419002ADCC01700162816 /* CustomPickerWeight */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +304,16 @@
 				B4B3092D2AE19CAC00D97711 /* WeightSelectedRow.swift */,
 			);
 			path = CustomPickerWeight;
+			sourceTree = "<group>";
+		};
+		B454AA8B2B1FA3D500CF73D8 /* Create a new password */ = {
+			isa = PBXGroup;
+			children = (
+				B454AA8C2B1FA46200CF73D8 /* CreateNewPassword.swift */,
+				B44AF9B92B22BE3100B82411 /* CongratulationView.swift */,
+				B48FFD212B239CAD007A5F2D /* backgroundGrey.swift */,
+			);
+			path = "Create a new password";
 			sourceTree = "<group>";
 		};
 		B45EFB682AA45FFD003D5772 /* Fields */ = {
@@ -355,6 +382,7 @@
 		B4CA4B722A8B0F3300592575 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B44AF9BB2B22C7B900B82411 /* CreateNewPasswordModel */,
 				B4EEE4202B05ADEC00E04BFD /* ForgotPasswordViewModel */,
 				B453B90D2A95CC9D00CC64D4 /* SignUpViewModel.swift */,
 				B44A77162AA58CC300599F11 /* SignInViewModel.swift */,
@@ -501,12 +529,14 @@
 				B48F6BFB2B02F4EC005BA149 /* ResetCodeView.swift in Sources */,
 				B43536A92A9432A000A64CE9 /* ActiveField.swift in Sources */,
 				B403851E2AE5B56000A6EB62 /* HeightSelectedView.swift in Sources */,
+				B48FFD222B239CAD007A5F2D /* backgroundGrey.swift in Sources */,
 				B4DB116F2AA9513C00037DC5 /* Credential.swift in Sources */,
 				B40EFABB2AE6F6190074D0FE /* GoalUserView.swift in Sources */,
 				B46AAFFA2A8FDEDB006D32A8 /* ButtonView.swift in Sources */,
 				B4D9786E2AE4A84A00C84762 /* HeightDelegate.swift in Sources */,
 				B4B3092E2AE19CAC00D97711 /* WeightSelectedRow.swift in Sources */,
 				B47851BD2AD4F4AF00F54D93 /* ProtocolPicker.swift in Sources */,
+				B44AF9BA2B22BE3100B82411 /* CongratulationView.swift in Sources */,
 				B417DAC62A8860A500A05C95 /* ContentView.swift in Sources */,
 				B41A823B2ABD140400235289 /* AgePicker.swift in Sources */,
 				B4F9091A2A8D983A00AC1B2F /* AppState.swift in Sources */,
@@ -516,6 +546,8 @@
 				B45418FF2ADCBD3100162816 /* WeightView.swift in Sources */,
 				B4371BFD2AAA4FDD00AE11E9 /* TokenModel.swift in Sources */,
 				B48A6ED02A8F3223003DCC3D /* SignUpView.swift in Sources */,
+				B44AF9BD2B22C84A00B82411 /* CreateNewPasswordViewModel.swift in Sources */,
+				B454AA8D2B1FA46200CF73D8 /* CreateNewPassword.swift in Sources */,
 				B453B90E2A95CC9D00CC64D4 /* SignUpViewModel.swift in Sources */,
 				B437B59F2AB24F5F006CDA97 /* GenderView.swift in Sources */,
 				B431BECD2AF077CB000D09A4 /* FlagViewModel.swift in Sources */,

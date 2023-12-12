@@ -7,7 +7,13 @@
 
 import SwiftUI
 
+struct Dog {
+    var name: String = "arnol"
+    var age: Int = 1
+}
+
 struct ResetCodeView: View {
+    
     enum FormFields: Hashable {
         case d1
         case d2
@@ -17,20 +23,23 @@ struct ResetCodeView: View {
     
     @ObservedObject var vm = ResetCodeViewModel()
     @FocusState private var focusField: FormFields?
+    @Environment(\.presentationMode) var presentationMode
     
-    @State var digitValues: [String]
-    @State var oldDigitValues: [String]
+    @State var digitValues: [String] = [" ", " ", " ", " "]
+    @State var oldDigitValues: [String] = [" ", " ", " ", " "]
 
-    init() {
-        digitValues = [" ", " ", " ", " "]
-        oldDigitValues = ["", "", "", ""]
-    }
+//    init() {
+//        digitValues = [" ", " ", " ", " "]
+//        oldDigitValues = ["", "", "", ""]
+//    }
     
     var body: some View {
         VStack {
             HStack {
                 HStack {
-                    Button(action: {}, label: {
+                    Button(action: {
+                        presentationMode.wrappedValue.dismiss()
+                    }, label: {
                         Image(systemName: "arrow.backward")
                     })
                     Text("Forgot Password")
@@ -67,9 +76,9 @@ struct ResetCodeView: View {
             }
 
             Spacer()
-
-            Button {
-                //
+            
+            NavigationLink {
+                CreateNewPassword()
             } label: {
                 Text("Verify")
                     .foregroundStyle(.white)
@@ -77,7 +86,9 @@ struct ResetCodeView: View {
                     .background(.purple)
                     .clipShape(RoundedRectangle(cornerRadius: 50))
             }
+            
         }
+        .navigationBarBackButtonHidden(true)
     }
     
     private func moveForwardFocusField(index: Int) -> Void {
