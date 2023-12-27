@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct RemoveBookmark: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         VStack(spacing: 15) {
             Text("Remove From Bookmark?")
@@ -21,48 +24,41 @@ struct RemoveBookmark: View {
                 .foregroundColor(.gray.opacity(0.2))
             
             ZStack {
+                // TODO: Change the rect for an image.
                 RoundedRectangle(cornerRadius: 10)
                     .frame(width: 331, height: 150)
-                VStack {
-                    Spacer().frame(height: 65)
+
+                VStack(alignment: .leading) {
+                    Spacer()
+                        .frame(height: 65)
+                    Text("Full Body Stretching")
+                        .foregroundStyle(.white)
+                        .font(.title2)
+
                     HStack {
-                        Text("Full Body Stretching")
-                            .foregroundStyle(.white)
-                            .font(.title2)
+                        Text("6 minutes")
+                        Text("|")
+                        Text("Intermediate")
                         Spacer()
-                    }
-                    
-                    HStack {
-                        HStack(spacing: 10) {
-                            Text("6 minutes")
-                                .foregroundStyle(.white)
-                            Text("|")
-                                .foregroundStyle(.white)
-                            Text("Intermediate")
-                                .foregroundStyle(.white)
-                        }
-                        
-                        Spacer()
-                        
                         Button(action: {
-                            
+                            // TODO: define if it should be a button or not.
                         }, label: {
                             Image(systemName: "bookmark.fill")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 20, height: 20)
-                                .foregroundColor(.white)
                         })
                     }
+                    
                 }
+                .foregroundStyle(.white)
                 .frame(width: 279, height: 19)
             }
             
             HStack(spacing: 20) {
-                
                 // Button Back
                 Button(action: {
-                    
+                    presentationMode.wrappedValue.dismiss()
                 }, label: {
                     Text("Back")
                         .frame(width: 150, height: 50)
@@ -75,7 +71,7 @@ struct RemoveBookmark: View {
                 
                 // button continue
                 Button(action: {
-                    
+                    //
                 }, label: {
                     Text("Continue")
                         .frame(width: 150, height: 50)
@@ -87,7 +83,8 @@ struct RemoveBookmark: View {
                 })
             }
         }
-        .frame(width: 331, height: 275)
+        .frame(width: 395, height: 336)
+        
     }
 }
 

@@ -42,4 +42,8 @@ class AppStateManger: ObservableObject {
         appState = .signIn
     }
     
+    func finishCreateNewPassword() -> Void {
+        appState = .main
+    }
+    
 }

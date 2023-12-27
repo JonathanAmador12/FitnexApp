@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct CongratulationView: View {
+    
+    @EnvironmentObject var appStateManager: AppStateManger
+    
     var body: some View {
         ZStack {
             Rectangle()
@@ -27,7 +30,7 @@ struct CongratulationView: View {
                         
                     Text("Your account is ready to use")
                     Button(action: {
-                        //
+                        appStateManager.finishCreateNewPassword()
                     }, label: {
                         Text("Go to Home")
                     })

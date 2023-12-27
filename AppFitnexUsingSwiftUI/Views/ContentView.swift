@@ -18,7 +18,9 @@ struct ContentView: View {
 //            SignInView()
 //        } else if appStateManager.appState == .signUp {
 //            SignUpView()
-//        } 
+//        } else if appStateManager.appState == .main {
+//            DashboardViewTwo()
+//        }
         DashboardViewTwo()
     }
     

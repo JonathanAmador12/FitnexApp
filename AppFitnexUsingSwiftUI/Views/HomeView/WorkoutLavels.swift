@@ -9,32 +9,43 @@ import SwiftUI
 
 struct WorkoutLavels: View {
 
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
-        HStack {
+        VStack {
             HStack {
-                Image(systemName: "arrow.backward")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 30, height: 30)
-                Text("Workout Levels")
-                    .font(.title)
-                    .fontWidth(.standard)
+                HStack {
+                    Button(action: {
+                        presentationMode.wrappedValue.dismiss()
+                    }, label: {
+                        Image(systemName: "arrow.backward")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundColor(.black)
+                            .frame(width: 30, height: 30)
+                    })
+                    
+                    Text("Workout Levels")
+                        .font(.title)
+                        .fontWidth(.standard)
+                }
+                Spacer()
+                Button(action: {
+                    //
+                }, label: {
+                    Image(systemName: "ellipsis.circle")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(.black)
+                })
             }
-            Spacer()
-            Button(action: {
-                //
-            }, label: {
-                Image(systemName: "ellipsis.circle")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 30, height: 30)
-                    .foregroundColor(.black)
-            })
+            .frame(width: 331, height: 30)
+            .padding(.bottom, 40)
+            
+            WorkoutLabelSubView()
         }
-        .frame(width: 331, height: 30)
-        .padding(.bottom, 40)
-        
-        WorkoutLabelSubView()
+        .navigationBarBackButtonHidden(true)
     }
     
 }
