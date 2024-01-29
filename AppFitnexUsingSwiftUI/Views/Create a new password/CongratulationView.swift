@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct CongratulationView: View {
+    
+    @EnvironmentObject var appStateManager: AppStateManger
+    
     var body: some View {
         ZStack {
             Rectangle()
@@ -26,7 +29,9 @@ struct CongratulationView: View {
                         .fontWeight(.heavy)
                         
                     Text("Your account is ready to use")
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Button(action: {
+                        appStateManager.finishCreateNewPassword()
+                    }, label: {
                         Text("Go to Home")
                     })
                     .frame(width: 321, height: 41)

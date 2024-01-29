@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LogInView: View {
+    
     @EnvironmentObject var appStateManager: AppStateManger
     @ObservedObject var signInViewModel = SignInViewModel()
     

@@ -81,7 +81,8 @@ struct CreateNewPassword: View {
                 .frame(width: 324, height: 104)
                 Spacer()
                 Button(action: {
-                    isActiveCongratulationView = vm.arePasswordsIqual(newPassword: newPassword, comfirmNewPassword: confirmNewPassord)
+//                    isActiveCongratulationView = vm.arePasswordsIqual(newPassword: newPassword, comfirmNewPassword: confirmNewPassord)
+                    isActiveCongratulationView = true
                 }, label: {
                     Text("Continue")
                         .foregroundStyle(.white)
