@@ -18,7 +18,7 @@ struct HomeView: View {
                             Image("littleLogo")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                            .frame(width: 50, height: 50)
+                                .frame(width: 50, height: 50)
                             
                             Text("Fitnex")
                                 .font(.title)
@@ -28,13 +28,13 @@ struct HomeView: View {
                         Spacer()
                         
                         HStack(spacing: 30) {
-                            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                            Button(action: {}, label: {
                                 Image(systemName: "bell")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 25, height: 25)
                                     .foregroundColor(.black)
-
+                                
                             })
                             
                             NavigationLink {
@@ -46,7 +46,7 @@ struct HomeView: View {
                                     .frame(width: 25, height: 25)
                                     .foregroundColor(.black)
                             }
-            
+                            
                         }
                     }
                     .frame(width: 331, height: 25)
@@ -55,7 +55,7 @@ struct HomeView: View {
                         Text("Morning Lolla")
                             .font(.system(size: 30))
                             .frame(width: 204, height: 40)
-                        .fontWeight(.bold)
+                            .fontWeight(.bold)
                         Spacer()
                     }
                 }
@@ -77,7 +77,7 @@ struct HomeView: View {
                                             .font(.title)
                                             .frame(width: 217, height: 17)
                                             .minimumScaleFactor(0.8)
-                            
+                                        
                                         HStack {
                                             HStack(spacing: 5) {
                                                 Text("10 minutes")
@@ -97,7 +97,7 @@ struct HomeView: View {
                                                 Image(systemName: "bookmark")
                                                     .foregroundColor(.white)
                                             })
-                                           
+                                            
                                         }
                                         .frame(width: 217, height: 30)
                                     }

@@ -22,6 +22,8 @@
 		B419E7232AA2C38700AFC7E2 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419E7222AA2C38700AFC7E2 /* PasswordTextField.swift */; };
 		B41A823B2ABD140400235289 /* AgePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41A823A2ABD140400235289 /* AgePicker.swift */; };
 		B41B8D942AA029260021FF97 /* TextInputToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B8D932AA029260021FF97 /* TextInputToggleView.swift */; };
+		B41C62D42B3CD56C0008CF22 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41C62D32B3CD56C0008CF22 /* DiscoverView.swift */; };
+		B41C62D72B3CF00D0008CF22 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41C62D62B3CF00D0008CF22 /* SearchBar.swift */; };
 		B41F9D822B32872500F83C82 /* TrainingLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41F9D812B32872500F83C82 /* TrainingLevelView.swift */; };
 		B42394152A8C0A0D007BD9F1 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42394142A8C0A0D007BD9F1 /* SignInView.swift */; };
 		B4281A152AEACFEF006BA8DE /* ImagePickerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4281A142AEACFEF006BA8DE /* ImagePickerTwo.swift */; };
@@ -92,6 +94,8 @@
 		B419E7222AA2C38700AFC7E2 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		B41A823A2ABD140400235289 /* AgePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgePicker.swift; sourceTree = "<group>"; };
 		B41B8D932AA029260021FF97 /* TextInputToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputToggleView.swift; sourceTree = "<group>"; };
+		B41C62D32B3CD56C0008CF22 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		B41C62D62B3CF00D0008CF22 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		B41F9D812B32872500F83C82 /* TrainingLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingLevelView.swift; sourceTree = "<group>"; };
 		B42394142A8C0A0D007BD9F1 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		B4281A142AEACFEF006BA8DE /* ImagePickerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerTwo.swift; sourceTree = "<group>"; };
@@ -213,6 +217,7 @@
 		B417DAD12A88620300A05C95 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B41C62D22B3CD52F0008CF22 /* Discover */,
 				B490C3142B29231D000646A2 /* HomeView */,
 				B454AA8B2B1FA3D500CF73D8 /* Create a new password */,
 				B40C522F2AFC7D85008E9561 /* ForgotPassword */,
@@ -249,6 +254,23 @@
 				B4F757E12AD3BC5D0013CE1D /* CustomPikerViewController.swift */,
 			);
 			path = CustomPickerAgeView;
+			sourceTree = "<group>";
+		};
+		B41C62D22B3CD52F0008CF22 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				B41C62D52B3CEFE30008CF22 /* SearchBar */,
+				B41C62D32B3CD56C0008CF22 /* DiscoverView.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		B41C62D52B3CEFE30008CF22 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				B41C62D62B3CF00D0008CF22 /* SearchBar.swift */,
+			);
+			path = SearchBar;
 			sourceTree = "<group>";
 		};
 		B42394122A8C0761007BD9F1 /* OnboardingView */ = {
@@ -591,6 +613,8 @@
 				B431BECD2AF077CB000D09A4 /* FlagViewModel.swift in Sources */,
 				B4E1A0BC2AEED1B6006013F9 /* LadaFlags.swift in Sources */,
 				B44FA2882B08649900D4A8CA /* DigitTextField.swift in Sources */,
+				B41C62D42B3CD56C0008CF22 /* DiscoverView.swift in Sources */,
+				B41C62D72B3CF00D0008CF22 /* SearchBar.swift in Sources */,
 				B4CA4B742A8B10CD00592575 /* OnboardingItem.swift in Sources */,
 				B41B8D942AA029260021FF97 /* TextInputToggleView.swift in Sources */,
 				B417DAD52A88633A00A05C95 /* OnboardingItemView.swift in Sources */,

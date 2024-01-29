@@ -20,7 +20,7 @@ struct DashboardViewTwo: View {
                 }
                 .tag(0)
             
-            Text("Discover")
+            DiscoverView()
                 .tabItem {
                     Image(systemName: "pencil.circle.fill")
                     Text("Discover")
