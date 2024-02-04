@@ -8,7 +8,7 @@
 import Foundation
 import Security
 
-class KeyStorage {
+class KeyStorage: KeyStorageProtocol {
     
     func saveTokensToKeychain(accessToken: String, refreshToken: String) throws -> Bool {
         

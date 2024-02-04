@@ -7,7 +7,7 @@
 
 import Foundation
 
-class LogInService {
+class LogInService: LogInServiceProtocol {
     
 //    func getUser(data: Data?, response: URLResponse?) -> TokenModel? {
 //        guard

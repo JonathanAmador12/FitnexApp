@@ -17,6 +17,11 @@ struct TokenModel: Decodable {
         case refreshToken = "refresh_token"
     }
     
+    init(accessToken: String, refreshToken: String) {
+        self.accessToken = accessToken
+        self.refreshToken = refreshToken
+    }
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
