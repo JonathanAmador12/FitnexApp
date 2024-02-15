@@ -10,7 +10,10 @@ import SwiftUI
 struct LogInView: View {
     
     @EnvironmentObject var appStateManager: AppStateManger
-    @ObservedObject var signInViewModel = SignInViewModel()
+    @ObservedObject var signInViewModel = SignInViewModel(
+        logInService: LogInService(),
+        keyStorage: KeyStorage()
+    )
     
     @State var emailErrorMessage: String?
     @State var passwordErrorMessage: String?

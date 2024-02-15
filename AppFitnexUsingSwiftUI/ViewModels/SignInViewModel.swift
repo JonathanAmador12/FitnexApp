@@ -7,16 +7,22 @@
 
 import Foundation
 
-class SignInViewModel: ObservableObject {
+class SignInViewModel: ObservableObject, SignInViewModelProtocol {
     
     @Published var email: String = ""
     @Published var password: String = ""
     @Published var activeField: SignUpFormField?
     @Published var isPasswordVisible: Bool = false
     @Published var rememberMe: Bool = false
+    @Published var internalError: String? = nil
     
-    var logInService = LogInService()
-    var keyStorage = KeyStorage()
+    var logInService: LogInServiceProtocol
+    var keyStorage: KeyStorageProtocol
+    
+    init(logInService: LogInServiceProtocol, keyStorage: KeyStorageProtocol) {
+        self.logInService = logInService
+        self.keyStorage = keyStorage
+    }
     
     // functions that validate fields
     func isValidEmail(email: String) -> Bool {
@@ -76,12 +82,13 @@ class SignInViewModel: ObservableObject {
             case .success(let tokens):
                 do {
                     let areKeepTokens = try self.keyStorage.saveTokensToKeychain(accessToken: tokens.accessToken, refreshToken: tokens.refreshToken)
+                } catch let apiError as APIError {
+                    self.internalError = apiError.localizedDescription
                 } catch {
-                    print(error)
+                    self.internalError = error.localizedDescription
                 }
-                
             case .failure(let error):
-                print("\(error)")
+                self.internalError = error.localizedDescription
             }
         }
     }
