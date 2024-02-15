@@ -8,17 +8,22 @@
 import Foundation
 
 class KeyStorageMock: KeyStorageProtocol {
-    var result: Bool
-    var isCalled: Bool
+    var saveToken: Bool
+    var isCalledKeychain: Bool
+    var triggerBadEncoding: Bool
     
-    init(result: Bool) {
-        self.result = result
-        self.isCalled = false
+    init(saveToken: Bool) {
+        self.saveToken = saveToken
+        self.isCalledKeychain = false
+        self.triggerBadEncoding = false
     }
     
     func saveTokensToKeychain(accessToken: String, refreshToken: String) throws -> Bool {
-        isCalled = true
-        return result
+        if (triggerBadEncoding) {
+            throw APIError.badCoding
+        }
+        isCalledKeychain = true
+        return saveToken
     }
     
 }

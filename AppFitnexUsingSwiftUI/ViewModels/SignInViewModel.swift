@@ -14,7 +14,7 @@ class SignInViewModel: ObservableObject, SignInViewModelProtocol {
     @Published var activeField: SignUpFormField?
     @Published var isPasswordVisible: Bool = false
     @Published var rememberMe: Bool = false
-    @Published var internalError: APIError? = nil
+    @Published var internalError: String? = nil
     
     var logInService: LogInServiceProtocol
     var keyStorage: KeyStorageProtocol
@@ -83,16 +83,13 @@ class SignInViewModel: ObservableObject, SignInViewModelProtocol {
                 do {
                     let areKeepTokens = try self.keyStorage.saveTokensToKeychain(accessToken: tokens.accessToken, refreshToken: tokens.refreshToken)
                 } catch let apiError as APIError {
-                    self.internalError = apiError
+                    self.internalError = apiError.localizedDescription
                 } catch {
-                    print(error)
+                    self.internalError = error.localizedDescription
                 }
-                
             case .failure(let error):
-                print("\(error)")
+                self.internalError = error.localizedDescription
             }
         }
     }
-    
-    
 }

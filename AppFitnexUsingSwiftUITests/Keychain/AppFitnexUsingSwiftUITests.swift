@@ -29,7 +29,7 @@ final class AppFitnexUsingSwiftUITests: XCTestCase {
         
         // when
         do {
-            var isSaveTokens = try keyStorage.saveTokensToKeychain(accessToken: token, refreshToken: refreshToken)
+            let isSaveTokens = try keyStorage.saveTokensToKeychain(accessToken: token, refreshToken: refreshToken)
             XCTAssertTrue(isSaveTokens)
         } catch {
             print(error.localizedDescription)
@@ -46,13 +46,11 @@ final class AppFitnexUsingSwiftUITests: XCTestCase {
         
         // when
         do {
-            var isSaveTokens = try keyStorage.saveTokensToKeychain(accessToken: token, refreshToken: refreshToken)
+            let isSaveTokens = try keyStorage.saveTokensToKeychain(accessToken: token, refreshToken: refreshToken)
             XCTAssertTrue(isSaveTokens)
         } catch {
             print(error.localizedDescription)
         }
-        
-        
     }
     
 }
