@@ -62,6 +62,13 @@
             ReferencedContainer = "container:AppFitnexUsingSwiftUI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "SERVER_URL"
+            value = "http://192.168.1.88:3000"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

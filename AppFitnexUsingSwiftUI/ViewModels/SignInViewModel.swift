@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import Combine
 
 class SignInViewModel: ObservableObject, SignInViewModelProtocol {
+    
     
     @Published var email: String = ""
     @Published var password: String = ""
@@ -22,6 +24,7 @@ class SignInViewModel: ObservableObject, SignInViewModelProtocol {
     init(logInService: LogInServiceProtocol, keyStorage: KeyStorageProtocol) {
         self.logInService = logInService
         self.keyStorage = keyStorage
+
     }
     
     // functions that validate fields
@@ -83,12 +86,18 @@ class SignInViewModel: ObservableObject, SignInViewModelProtocol {
                 do {
                     let areKeepTokens = try self.keyStorage.saveTokensToKeychain(accessToken: tokens.accessToken, refreshToken: tokens.refreshToken)
                 } catch let apiError as APIError {
-                    self.internalError = apiError.localizedDescription
+                    DispatchQueue.main.async {
+                        self.internalError = apiError.localizedDescription
+                    }
                 } catch {
-                    self.internalError = error.localizedDescription
+                    DispatchQueue.main.async {
+                        self.internalError = error.localizedDescription
+                    }
                 }
             case .failure(let error):
-                self.internalError = error.localizedDescription
+                DispatchQueue.main.async {
+                    self.internalError = error.localizedDescription
+                }
             }
         }
     }

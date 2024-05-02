@@ -30,12 +30,12 @@ class LogInService: LogInServiceProtocol {
             return
         }
         
-        guard let url = URL(string: "http://192.168.1.88:3000/account/token") else {
+        guard let baseURL = ProcessInfo.processInfo.environment["SERVER_URL"], let url = URL(string: "\(baseURL)/account/token") else {
             result = .failure(APIError.badURL)
             handler(result)
             return
         }
-        
+
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.httpBody = jsonEncode

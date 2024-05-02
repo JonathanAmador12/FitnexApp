@@ -34,6 +34,7 @@ struct LogInView: View {
                 
                 VStack(spacing: 20) {
                     EmailField(email: $signInViewModel.email, imageName: "envelope.fill", title: "Email")
+                        .textInputAutocapitalization(.never)
                         .foregroundColor(signInViewModel.activateEmail() ? Color.black: Color.gray)
                         .frame(width: 300, height: 40)
                         .background(signInViewModel.activateEmail() ? Color("selectedField") : Color("ColorShadow'sFields"))
@@ -85,9 +86,9 @@ struct LogInView: View {
                 
                 VStack(spacing: 20) {
                     Button {
-                        emailErrorMessage = signInViewModel.getEmailErrorMessage(email: signInViewModel.email)
-                        
-                        passwordErrorMessage = signInViewModel.getPasswordErrorMessage(password: signInViewModel.password)
+//                        emailErrorMessage = signInViewModel.getEmailErrorMessage(email: signInViewModel.email)
+//                        
+//                        passwordErrorMessage = signInViewModel.getPasswordErrorMessage(password: signInViewModel.password)
                         
                         signInViewModel.getTokensOfService(credential: Credential(email: signInViewModel.email, password: signInViewModel.password))
                         

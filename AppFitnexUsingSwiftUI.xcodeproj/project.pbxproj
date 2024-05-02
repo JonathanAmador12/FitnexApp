@@ -67,6 +67,7 @@
 		B4D67DFA2B3128EE00E7253F /* MyBookMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D67DF92B3128EE00E7253F /* MyBookMarkView.swift */; };
 		B4D9786E2AE4A84A00C84762 /* HeightDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D9786D2AE4A84A00C84762 /* HeightDelegate.swift */; };
 		B4DB116F2AA9513C00037DC5 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DB116E2AA9513C00037DC5 /* Credential.swift */; };
+		B4DDB3892B7FFEED00BBD374 /* LoginService1Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DDB3882B7FFEED00BBD374 /* LoginService1Test.swift */; };
 		B4E02BE82B2A389A00C559C3 /* WorkoutLavels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E02BE72B2A389A00C559C3 /* WorkoutLavels.swift */; };
 		B4E159A22B6ED60E005C37CE /* KeyStorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E159A12B6ED60E005C37CE /* KeyStorageProtocol.swift */; };
 		B4E159A42B6ED6B1005C37CE /* KeyStorageMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E159A32B6ED6B1005C37CE /* KeyStorageMock.swift */; };
@@ -159,6 +160,7 @@
 		B4D67DF92B3128EE00E7253F /* MyBookMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookMarkView.swift; sourceTree = "<group>"; };
 		B4D9786D2AE4A84A00C84762 /* HeightDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightDelegate.swift; sourceTree = "<group>"; };
 		B4DB116E2AA9513C00037DC5 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		B4DDB3882B7FFEED00BBD374 /* LoginService1Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService1Test.swift; sourceTree = "<group>"; };
 		B4E02BE72B2A389A00C559C3 /* WorkoutLavels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLavels.swift; sourceTree = "<group>"; };
 		B4E159A12B6ED60E005C37CE /* KeyStorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyStorageProtocol.swift; sourceTree = "<group>"; };
 		B4E159A32B6ED6B1005C37CE /* KeyStorageMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyStorageMock.swift; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 				B44E81E72B697F0600A13C08 /* CredentialTest.swift */,
 				B44E81E92B698BFA00A13C08 /* TokenTest.swift */,
 				B44DD75B2B6DA62F00996E0F /* SignInVMTest.swift */,
+				B4DDB3882B7FFEED00BBD374 /* LoginService1Test.swift */,
 			);
 			path = AppFitnexUsingSwiftUITests;
 			sourceTree = "<group>";
@@ -749,6 +752,7 @@
 			files = (
 				B44E81E82B697F0600A13C08 /* CredentialTest.swift in Sources */,
 				B430795B2B68331B00C36EE7 /* AppFitnexUsingSwiftUITests.swift in Sources */,
+				B4DDB3892B7FFEED00BBD374 /* LoginService1Test.swift in Sources */,
 				B44E81EA2B698BFA00A13C08 /* TokenTest.swift in Sources */,
 				B44DD75C2B6DA62F00996E0F /* SignInVMTest.swift in Sources */,
 			);
