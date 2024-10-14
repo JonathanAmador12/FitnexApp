@@ -17,9 +17,10 @@ struct OnboardingItemView: View {
             VStack {
                 Image(uiImage: image)
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(height: proxy.frame(in: .global).height / 2)
-                    .ignoresSafeArea(edges: [.top])
+                    .scaledToFit()
+                    .frame(width: proxy.size.width, height: proxy.size.height * 0.7 )
+                    .clipped()
+                    .ignoresSafeArea(edges: [.top, .leading, .trailing])
                     .padding(.bottom, 50)
                 
                 Text(text)

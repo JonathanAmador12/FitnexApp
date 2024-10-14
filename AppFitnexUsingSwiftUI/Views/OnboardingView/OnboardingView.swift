@@ -11,9 +11,9 @@ struct OnboardingView: View {
     @EnvironmentObject var appStateManager: AppStateManger
     
     private var onboardingItems:[OnboardingItem] = [
-        OnboardingItem(id: 1, image: UIImage(named: "imageOnboardingExample")!, message: "esta es una nueva prueba"),
-        OnboardingItem(id: 2, image: UIImage(named: "imageOnboardingExample")!, message: "esta es una nueva prueba"),
-        OnboardingItem(id: 3, image: UIImage(named: "imageOnboardingExample")!, message: "esta es una nueva prueba")
+        OnboardingItem(id: 1, image: UIImage(named: "imageOnboardingExample")!, message: "Find the rigth workout for only you"),
+        OnboardingItem(id: 2, image: UIImage(named: "imageTwo")!, message: "Make suitable workout and great results"),
+        OnboardingItem(id: 3, image: UIImage(named: "imageThree")!, message: "Let's do a workout and live healthy with us")
     ]
 
     @State private var currentPageIndex = 1
