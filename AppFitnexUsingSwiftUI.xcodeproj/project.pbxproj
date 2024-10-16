@@ -54,6 +54,7 @@
 		B46AAFFA2A8FDEDB006D32A8 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AAFF92A8FDEDB006D32A8 /* ButtonView.swift */; };
 		B4719EB32AA104C700A658ED /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4719EB22AA104C700A658ED /* LogInView.swift */; };
 		B47851BD2AD4F4AF00F54D93 /* ProtocolPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47851BC2AD4F4AF00F54D93 /* ProtocolPicker.swift */; };
+		B47B3ED82CBF72450097E03A /* LaunchScreenThree.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47B3ED72CBF72450097E03A /* LaunchScreenThree.storyboard */; };
 		B48A6ED02A8F3223003DCC3D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48A6ECF2A8F3223003DCC3D /* SignUpView.swift */; };
 		B48F6BFB2B02F4EC005BA149 /* ResetCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F6BFA2B02F4EC005BA149 /* ResetCodeView.swift */; };
 		B48FFD222B239CAD007A5F2D /* backgroundGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48FFD212B239CAD007A5F2D /* backgroundGrey.swift */; };
@@ -147,6 +148,8 @@
 		B46AAFF92A8FDEDB006D32A8 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		B4719EB22AA104C700A658ED /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		B47851BC2AD4F4AF00F54D93 /* ProtocolPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolPicker.swift; sourceTree = "<group>"; };
+		B47B3ED72CBF72450097E03A /* LaunchScreenThree.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenThree.storyboard; sourceTree = "<group>"; };
+		B47B3ED92CBF756E0097E03A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B48A6ECF2A8F3223003DCC3D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		B48F6BFA2B02F4EC005BA149 /* ResetCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetCodeView.swift; sourceTree = "<group>"; };
 		B48FFD212B239CAD007A5F2D /* backgroundGrey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backgroundGrey.swift; sourceTree = "<group>"; };
@@ -229,6 +232,7 @@
 		B417DAC22A8860A500A05C95 /* AppFitnexUsingSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B47B3ED92CBF756E0097E03A /* Info.plist */,
 				B44DD75F2B6DCAF500996E0F /* Mocks */,
 				B44E81EB2B69DDA300A13C08 /* UseCases */,
 				B4B5951A2ADF3FFC00A59559 /* Extension */,
@@ -244,6 +248,7 @@
 				B417DAC32A8860A500A05C95 /* AppFitnexUsingSwiftUIApp.swift */,
 				B417DAC72A8860A600A05C95 /* Assets.xcassets */,
 				B417DAC92A8860A600A05C95 /* Preview Content */,
+				B47B3ED72CBF72450097E03A /* LaunchScreenThree.storyboard */,
 			);
 			path = AppFitnexUsingSwiftUI;
 			sourceTree = "<group>";
@@ -654,6 +659,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B417DACB2A8860A600A05C95 /* Preview Assets.xcassets in Resources */,
+				B47B3ED82CBF72450097E03A /* LaunchScreenThree.storyboard in Resources */,
 				B417DAC82A8860A600A05C95 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -888,12 +894,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppFitnexUsingSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 9SM8FHLJFG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppFitnexUsingSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -917,12 +925,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppFitnexUsingSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 9SM8FHLJFG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppFitnexUsingSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
