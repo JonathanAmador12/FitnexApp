@@ -18,6 +18,7 @@ struct LogInView: View {
     @State var emailErrorMessage: String?
     @State var passwordErrorMessage: String?
     @State var isActiveForgotPasswordView: Bool = false
+    @FocusState private var focusedFiel: SignUpFormField?
     
     var body: some View {
         GeometryReader { geometry in
@@ -37,8 +38,9 @@ struct LogInView: View {
                         .textInputAutocapitalization(.never)
                         .foregroundColor(signInViewModel.activateEmail() ? Color.black: Color.gray)
                         .frame(width: 300, height: 40)
-                        .background(signInViewModel.activateEmail() ? Color("selectedField") : Color("ColorShadow'sFields"))
+                        .background(focusedFiel == .email ? Color("selectedField") : Color("ColorShadow'sFields"))
                         .clipShape(RoundedRectangle(cornerRadius: 8))
+                        .focused($focusedFiel, equals: .email)
                         .onTapGesture {
                             signInViewModel.activeField = .email
                         }
@@ -55,8 +57,9 @@ struct LogInView: View {
                     PasswordTextField(password: $signInViewModel.password, isFieldVisible: signInViewModel.isPasswordVisible, sistemNameImage: "lock.fill", title: "Password")
                         .foregroundColor(signInViewModel.activatePassword() ? Color.black : Color.gray)
                         .frame(width: 300, height: 40)
-                        .background(signInViewModel.activatePassword() ? Color("selectedField") : Color("ColorShadow'sFields"))
+                        .background(focusedFiel == .password ? Color("selectedField") : Color("ColorShadow'sFields"))
                         .clipShape(RoundedRectangle(cornerRadius: 8))
+                        .focused($focusedFiel, equals: .password)
                         .onTapGesture {
                             signInViewModel.activeField = .password
                         }
