@@ -9,12 +9,14 @@ import Foundation
 
 class AppStateManger: ObservableObject {
     
+    static let shared = AppStateManger()
+    
     @Published var appState: AppState
     
     private var onboardingManager: OnbaordingManager
     private var authManager: AuthManager
     
-    init () {
+    private init () {
         onboardingManager = OnbaordingManager()
         authManager = AuthManager()
         
@@ -43,6 +45,10 @@ class AppStateManger: ObservableObject {
     }
     
     func finishCreateNewPassword() -> Void {
+        appState = .main
+    }
+    
+    func enterMainView() -> Void {
         appState = .main
     }
     

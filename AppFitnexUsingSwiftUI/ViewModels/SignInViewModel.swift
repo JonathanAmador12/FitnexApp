@@ -9,8 +9,6 @@ import Foundation
 import Combine
 
 class SignInViewModel: ObservableObject, SignInViewModelProtocol {
-    
-    
     @Published var email: String = ""
     @Published var password: String = ""
     @Published var activeField: SignUpFormField?
@@ -85,6 +83,7 @@ class SignInViewModel: ObservableObject, SignInViewModelProtocol {
             case .success(let tokens):
                 do {
                     let areKeepTokens = try self.keyStorage.saveTokensToKeychain(accessToken: tokens.accessToken, refreshToken: tokens.refreshToken)
+                    AppStateManger.shared.enterMainView()
                 } catch let apiError as APIError {
                     DispatchQueue.main.async {
                         self.internalError = apiError.localizedDescription

@@ -9,7 +9,7 @@ import SwiftUI
 import UIKit
 
 struct ContentView: View {
-    @EnvironmentObject var appStateManager: AppStateManger
+    @StateObject var appStateManager = AppStateManger.shared
 
     var body: some View {
         if appStateManager.appState == .onboarding {
@@ -21,7 +21,6 @@ struct ContentView: View {
         } else if appStateManager.appState == .main {
             DashboardViewTwo()
         }
-       // DashboardViewTwo()
     }
     
 }
@@ -29,6 +28,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(AppStateManger())
+            //.environmentObject(AppStateManger())
     }
 }
