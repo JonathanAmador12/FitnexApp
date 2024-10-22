@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    @EnvironmentObject var appStateManager: AppStateManger
+    @StateObject var appStateManager = AppStateManger.shared
     
     private var onboardingItems:[OnboardingItem] = [
         OnboardingItem(id: 1, image: UIImage(named: "imageOnboardingExample")!, message: "Find the rigth workout for only you"),
@@ -56,6 +56,7 @@ struct OnboardingView: View {
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingView()
-            .environmentObject(AppStateManger())
+        // this could be used if there is a Environment
+            //.environmentObject(AppStateManger())
     }
 }

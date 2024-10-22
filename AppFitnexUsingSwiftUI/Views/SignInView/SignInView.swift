@@ -21,7 +21,7 @@ enum SignInMethodImageType {
 
 struct SignInView: View {
     
-    @EnvironmentObject var appStateManager: AppStateManger
+    @StateObject var appStateManager = AppStateManger.shared
     
     var signInMethods: [SignInMethod] = [
         SignInMethod(name: "Continue with Facebook", image: "face", imageType: .asset),

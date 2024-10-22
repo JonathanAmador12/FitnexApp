@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CongratulationView: View {
     
-    @EnvironmentObject var appStateManager: AppStateManger
+    @StateObject var appStateManager = AppStateManger.shared
     
     var body: some View {
         ZStack {

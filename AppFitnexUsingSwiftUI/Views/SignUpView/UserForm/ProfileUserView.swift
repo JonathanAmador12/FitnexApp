@@ -10,7 +10,7 @@ import SwiftUI
 struct ProfileUserView: View {
     
     @Environment(\.presentationMode) var presentationMode
-    @EnvironmentObject var appStateManager: AppStateManger
+    @StateObject var appStateManager = AppStateManger.shared
     
     @State var fullName: String = ""
     @State var nickName: String = ""
