@@ -40,6 +40,10 @@ class AppStateManger: ObservableObject {
         appState = .signUp
     }
     
+    func signIn() -> Void {
+        appState = .signIn
+    }
+    
     func finishSignUp() -> Void {
         appState = .signIn
     }

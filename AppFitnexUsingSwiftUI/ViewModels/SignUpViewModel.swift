@@ -9,17 +9,14 @@ import Foundation
 import Combine
 class SignUpViewModel: ObservableObject {
     
-    @Published var activeField: SignUpFormField?
     @Published var email: String = ""
     @Published var password: String = ""
     @Published var confirmPassword: String = ""
     
     
-    func isActivateSignUp() -> Bool {
-        if !isEmpyEmail() && isValidEmail(email: email) && !isEmptyPassword() && isValidPassword(password: password) && !isEmptyPasswordConfirmation() && !ArePasswordAndPasswordConfirmationTheSame(password: password, confirmPassword: confirmPassword) {
-            return true
-        } else {
-            return false
+    func isActivateSignUp() {
+        if isEmpyEmail() == true && isValidEmail(email: email) == true && isEmptyPassword() == true && isValidPassword(password: password) == true && isEmptyPasswordConfirmation() == true && ArePasswordAndPasswordConfirmationTheSame(password: password, confirmPassword: confirmPassword) == true {
+            AppStateManger.shared.signIn()
         }
     }
     
@@ -52,35 +49,9 @@ class SignUpViewModel: ObservableObject {
         }
         return nil
     }
-
-    // functions emails
-    func isActiveEmail() -> Bool {
-        if activeField == .email {
-            return true
-        } else {
-            return false
-        }
-    }
     
     func isEmpyEmail() -> Bool {
         if !email.isEmpty {
-            return true
-        } else {
-            return false
-        }
-    }
-    
-    func isEmailActiveOrFill() -> Bool {
-        if isActiveEmail() == true || isEmpyEmail() == true {
-            return true
-        } else {
-            return false
-        }
-    }
-    
-    // functions password
-    func isActivePassword() -> Bool {
-        if activeField == .password {
             return true
         } else {
             return false
@@ -95,35 +66,8 @@ class SignUpViewModel: ObservableObject {
         }
     }
     
-    func isPasswordActiveOrFill() -> Bool {
-        if isActivePassword() == true || isEmptyPassword() == true {
-            return true
-        } else {
-            return false
-        }
-    }
-    
-    // passwords confirmation password
-    
-    func isActivePasswordConfirmation() -> Bool {
-        if activeField == .passwordConfirmation {
-            return true
-        } else {
-            return false
-        }
-    }
-    
     func isEmptyPasswordConfirmation() -> Bool {
         if !confirmPassword.isEmpty {
-            return true
-        } else {
-            return false
-        }
-    }
-    
-    func isPasswordConfirmationActiveOrFill() -> Bool {
-        
-        if isActivePasswordConfirmation() == true || isEmptyPasswordConfirmation() == true {
             return true
         } else {
             return false
@@ -154,11 +98,4 @@ class SignUpViewModel: ObservableObject {
         }
         return areTheSame
     }
-    
-    // active eye slash
-    
-//    func isActiveEyeSlash() -> Bool {
-//        var Active = false
-//        r
-//    }
 }
