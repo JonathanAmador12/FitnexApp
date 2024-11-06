@@ -9,7 +9,6 @@ import SwiftUI
 
 struct LogInView: View {
     
-    @EnvironmentObject var appStateManager: AppStateManger
     @ObservedObject var signInViewModel = SignInViewModel(
         logInService: LogInService(),
         keyStorage: KeyStorage()
@@ -143,7 +142,7 @@ struct LogInView: View {
                         Text("Don't have account")
                             .frame(width: 150, height: 20)
                         Button {
-                            appStateManager.signUp()
+                            AppStateManger.shared.signUp()
                         } label: {
                             Text("Sign Up")
                                 .foregroundColor(.purple)
