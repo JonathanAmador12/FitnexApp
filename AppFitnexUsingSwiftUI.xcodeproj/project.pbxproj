@@ -75,6 +75,7 @@
 		B4E1A0BC2AEED1B6006013F9 /* LadaFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E1A0BB2AEED1B6006013F9 /* LadaFlags.swift */; };
 		B4E1A0BE2AEED2A0006013F9 /* FlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E1A0BD2AEED2A0006013F9 /* FlagView.swift */; };
 		B4E7F63B2B6C1A3E00A8B813 /* LogInServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E7F63A2B6C1A3E00A8B813 /* LogInServiceProtocol.swift */; };
+		B4EA2C9E2CDC31C300817099 /* HomeViewPictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EA2C9D2CDC31C300817099 /* HomeViewPictures.swift */; };
 		B4EEE4222B05AE3C00E04BFD /* ResetCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EEE4212B05AE3C00E04BFD /* ResetCodeViewModel.swift */; };
 		B4F09ED52AE48F75002E67A3 /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F09ED42AE48F75002E67A3 /* HeightView.swift */; };
 		B4F1F1452AE30DA200276211 /* HeightUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1F1442AE30DA200276211 /* HeightUserView.swift */; };
@@ -170,6 +171,7 @@
 		B4E1A0BB2AEED1B6006013F9 /* LadaFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LadaFlags.swift; sourceTree = "<group>"; };
 		B4E1A0BD2AEED2A0006013F9 /* FlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagView.swift; sourceTree = "<group>"; };
 		B4E7F63A2B6C1A3E00A8B813 /* LogInServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInServiceProtocol.swift; sourceTree = "<group>"; };
+		B4EA2C9D2CDC31C300817099 /* HomeViewPictures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPictures.swift; sourceTree = "<group>"; };
 		B4EEE4212B05AE3C00E04BFD /* ResetCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetCodeViewModel.swift; sourceTree = "<group>"; };
 		B4F09ED42AE48F75002E67A3 /* HeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightView.swift; sourceTree = "<group>"; };
 		B4F1F1442AE30DA200276211 /* HeightUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightUserView.swift; sourceTree = "<group>"; };
@@ -514,6 +516,7 @@
 				B4DB116E2AA9513C00037DC5 /* Credential.swift */,
 				B4371BFC2AAA4FDD00AE11E9 /* TokenModel.swift */,
 				B4E1A0BB2AEED1B6006013F9 /* LadaFlags.swift */,
+				B4EA2C9D2CDC31C300817099 /* HomeViewPictures.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -698,6 +701,7 @@
 				B4F909172A8D973A00AC1B2F /* AppStateManager.swift in Sources */,
 				B40C52312AFC7DE7008E9561 /* ForgotPasswordView.swift in Sources */,
 				B40EFABD2AE72D370074D0FE /* ActivityLabelUserView.swift in Sources */,
+				B4EA2C9E2CDC31C300817099 /* HomeViewPictures.swift in Sources */,
 				B4FDA0B12B33B3600067B1EC /* RemoveBookmark.swift in Sources */,
 				B44A77172AA58CC300599F11 /* SignInViewModel.swift in Sources */,
 				B490C3172B2924C2000646A2 /* HomeView.swift in Sources */,

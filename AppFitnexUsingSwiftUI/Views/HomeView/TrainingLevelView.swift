@@ -16,7 +16,7 @@ struct TrainingLevelView: View {
             Button(action: {
                 //
             }, label: {
-                Text("Biginner")
+                Text("Beginner")
                     .frame(width: 87, height: 27)
                     .foregroundColor(.black)
                     .background(trainingLabel == .biginner ? .purple.opacity(0.2) : .white)
