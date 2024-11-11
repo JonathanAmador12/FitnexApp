@@ -9,22 +9,32 @@ import SwiftUI
 
 struct WorkoutLabelSubView: View {
     
+    var imagenes:[HomeViewPictures] = [
+        HomeViewPictures(id: 1, image: "gymOne", title: "Squat Movement Exercise", time: "6 minutes", level: "Intermediate"),
+        HomeViewPictures(id: 2, image: "gymTwo", title: "Squat Movement Exercise", time: "6 minutes", level: "Intermediate"),
+        HomeViewPictures(id: 3, image: "gymThree", title: "Squat Movement Exercise", time: "6 minutes", level: "Intermediate"),
+        HomeViewPictures(id: 4, image: "gymFour", title: "Squat Movement Exercise", time: "6 minutes", level: "Intermediate"),
+        HomeViewPictures(id: 5, image: "gymFive", title: "Squat Movement Exercise", time: "6 minutes", level: "Intermediate")
+    ]
+    
     var body: some View {
         
         TrainingLevelView()
         
         ScrollView {
-            ForEach( 1...4, id: \.self) {
-                _ in
+            ForEach(imagenes) {
+                image in
                 ScrollView {
                     ZStack {
-                        RoundedRectangle(cornerRadius: 10)
+                        Image(image.image)
+                            .resizable()
                             .frame(width: 331, height: 150)
+                            .cornerRadius(10)
                         VStack {
                             Spacer()
                                 .frame(height: 70)
                             HStack {
-                                Text("Squet Movement Exercise")
+                                Text("Squat Movement Exercise")
                                     .foregroundStyle(.white)
                                 .font(.title2)
                                 .fontWeight(.semibold)

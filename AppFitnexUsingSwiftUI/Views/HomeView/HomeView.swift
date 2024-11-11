@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct HomeView: View {
+    var imageList:[HomeViewPictures] = [
+        HomeViewPictures(id: 1, image: "gymOne", title: "Full Body Stretching", time: "12 minutes", level: "Intermediate"),
+        HomeViewPictures(id: 2, image: "gymTwo", title: "Full Body Stretching", time: "15 minutes", level: "Intermediate"),
+        HomeViewPictures(id: 3, image: "gymThree", title: "Full Body Stretching", time: "10 minutes", level: "Intermediate"),
+        HomeViewPictures(id: 4, image: "gymFour", title: "Full Body Stretching", time: "20 minutes", level: "Intermediate"),
+        HomeViewPictures(id: 5, image: "gymFive", title: "Full Body Stretching", time: "18 minutes", level: "Intermediate"),
+        HomeViewPictures(id: 6, image: "gymSix", title: "Full Body Stretching", time: "14 minutes", level: "Intermediate"),
+        HomeViewPictures(id: 7, image: "gymSeven", title: "Full Body Stretching", time: "10 minutes", level: "Intermediate"),
+        HomeViewPictures(id: 8, image: "gymEight", title: "Full Body Stretching", time: "19 minutes", level: "Intermediate"),
+        HomeViewPictures(id: 9, image: "gymNine", title: "Full Body Stretching", time: "10 minutes", level: "Intermediate"),
+        HomeViewPictures(id: 10, image: "gymTen", title: "Full Body Stretching", time: "10 minutes", level: "Intermediate")
+    ]
     var body: some View {
-        
         NavigationView {
             VStack {
                 VStack(spacing: 10) {
@@ -63,16 +74,17 @@ struct HomeView: View {
                 
                 ScrollView(.horizontal) {
                     HStack {
-                        ForEach(0...9, id: \.self) {_ in
+                        ForEach(imageList) {image in
                             ZStack {
-                                Rectangle()
+                                Image(image.image)
+                                    .resizable()
                                     .frame(width: 260, height: 286)
                                 VStack {
                                     Spacer()
                                         .frame(height: 180)
                                     VStack(spacing: 3) {
                                         
-                                        Text("Full Body Stretching")
+                                        Text(image.title)
                                             .foregroundStyle(.white)
                                             .font(.title)
                                             .frame(width: 217, height: 17)
@@ -80,13 +92,13 @@ struct HomeView: View {
                                         
                                         HStack {
                                             HStack(spacing: 5) {
-                                                Text("10 minutes")
+                                                Text(image.time)
                                                     .foregroundStyle(.white)
                                                     .font(.subheadline)
                                                 Text("|")
                                                     .foregroundStyle(.white)
                                                     .font(.subheadline)
-                                                Text("Intermediate")
+                                                Text(image.level)
                                                     .foregroundStyle(.white)
                                                     .font(.subheadline)
                                             }
@@ -106,6 +118,7 @@ struct HomeView: View {
                             }
                         }
                     }
+                    .padding(.horizontal, 80)
                 }
                 .frame(width: 543, height: 342)
                 
