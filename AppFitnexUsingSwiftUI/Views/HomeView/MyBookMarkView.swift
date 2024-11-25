@@ -9,6 +9,16 @@ import SwiftUI
 
 struct MyBookMarkView: View {
     
+    var imagenes:[HomeViewPictures] = [
+        HomeViewPictures(id: 1, image: "twoImage", title: "Arms Dumbbel", time: "10 minutes", level: "Intermediate"),
+        HomeViewPictures(id: 2, image: "gymOne", title: "Arms Dumbbel", time: "10 minutes", level: "Intermediate"),
+        HomeViewPictures(id: 3, image: "gymThree", title: "Arms Dumbbel", time: "10 minutes", level: "Intermediate"),
+        HomeViewPictures(id: 4, image: "gymFive", title: "Arms Dumbbel", time: "10 minutes", level: "Intermediate"),
+        HomeViewPictures(id: 5, image: "gymNine", title: "Arms Dumbbel", time: "10 minutes", level: "Intermediate"),
+        HomeViewPictures(id: 6, image: "gymTen", title: "Arms Dumbbel", time: "10 minutes", level: "Intermediate"),
+        HomeViewPictures(id: 7, image: "gymEleven", title: "Arms Dumbbel", time: "10 minutes", level: "Intermediate")
+    ]
+    
     @Environment(\.presentationMode) var presentationMode
     
     // number of columns of grid
@@ -69,28 +79,30 @@ struct MyBookMarkView: View {
             TrainingLevelView()
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 10) {
-                    ForEach( 0..<20, id: \.self) {
-                        _ in
+                    ForEach( imagenes) {
+                        image in
                         ZStack {
-                            Rectangle()
+                            Image(image.image)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
                                 .frame(width: 156, height: 135)
-                            .cornerRadius(10)
+                                .cornerRadius(10)
                             VStack {
                                 Spacer()
                                     .frame(height: 60)
-                                Text("Arms Dumbbel")
+                                Text(image.title)
                                     .frame(width: 130, height: 17)
                                     .foregroundStyle(.white)
                                     .padding(.trailing)
                                 HStack {
                                     HStack(spacing: 3) {
-                                        Text("10 minutes")
+                                        Text(image.time)
                                             .foregroundStyle(.white)
                                             .minimumScaleFactor(0.1)
                                         Text("|")
                                             .foregroundStyle(.white)
                                             .minimumScaleFactor(0.1)
-                                        Text("Intermediate")
+                                        Text(image.level)
                                             .foregroundStyle(.white)
                                             .minimumScaleFactor(0.1)
                                     }
