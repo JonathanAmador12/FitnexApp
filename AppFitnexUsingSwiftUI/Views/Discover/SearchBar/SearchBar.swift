@@ -10,13 +10,16 @@ import SwiftUI
 struct SearchBar: View {
     
     @Binding var text: String
-    @Binding var disappeartext: Bool
+    @Binding var disappeartext:Bool
+    
     var body: some View {
         HStack {
             TextField("Search", text: $text)
                 .padding(.leading, 30)
             
-            Button(action: {}, label: {
+            Button(action: {
+                disappeartext = false
+            }, label: {
                 Image(systemName: "x.circle")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -26,7 +29,7 @@ struct SearchBar: View {
             })
             .padding(.trailing, 30)
         }
-        .frame(width: 331, height: 42)
+        .frame(width: 331, height: 30)
         .background(Color("selectedField"))
         .cornerRadius(10)
         .overlay {

@@ -9,20 +9,14 @@ import SwiftUI
 
 struct WorkoutLabelSubView: View {
     
-    var imagenes:[HomeViewPictures] = [
-        HomeViewPictures(id: 1, image: "gymOne", title: "Squat Movement Exercise", time: "6 minutes", level: "Intermediate"),
-        HomeViewPictures(id: 2, image: "gymTwo", title: "Squat Movement Exercise", time: "6 minutes", level: "Intermediate"),
-        HomeViewPictures(id: 3, image: "gymThree", title: "Squat Movement Exercise", time: "6 minutes", level: "Intermediate"),
-        HomeViewPictures(id: 4, image: "gymFour", title: "Squat Movement Exercise", time: "6 minutes", level: "Intermediate"),
-        HomeViewPictures(id: 5, image: "gymFive", title: "Squat Movement Exercise", time: "6 minutes", level: "Intermediate")
-    ]
+    @ObservedObject var discoverViewModel = DiscoverViewModel()
     
     var body: some View {
         
         TrainingLevelView()
         
         ScrollView {
-            ForEach(imagenes) {
+            ForEach(discoverViewModel.imagesPublisher) {
                 image in
                 ScrollView {
                     ZStack {

@@ -9,33 +9,34 @@ import SwiftUI
 
 struct DashboardViewTwo: View {
     
-    @State var launching: Int = 0
+    enum Tab: Hashable {
+        case home, discover, insight, user
+    }
+    
+    @State private var launching:Tab = .home
     
     var body: some View {
+        
         TabView(selection: $launching) {
             HomeView()
+                .tag(Tab.home)
                 .tabItem {
-                    Image(systemName: "house")
-                    Text("Home")
+                    Label("Home", systemImage: "house")
                 }
-                .tag(0)
             
             DiscoverView()
                 .tabItem {
-                    Image(systemName: "pencil.circle.fill")
-                    Text("Discover")
+                    Label("Discover", systemImage: "pencil.circle.fill")
                 }
             
             Text("Insight")
                 .tabItem {
-                    Image(systemName: "chart.bar.xaxis")
-                    Text("insight")
+                    Label("insight", systemImage: "chart.bar.xaxis")
                 }
             
             Text("User")
                 .tabItem {
-                    Image(systemName: "person")
-                    Text("User")
+                    Label("User", systemImage: "person")
                 }
         }
     }
