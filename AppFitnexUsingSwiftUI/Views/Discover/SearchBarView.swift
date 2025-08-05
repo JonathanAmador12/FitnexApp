@@ -47,8 +47,9 @@ struct SearchBarView: View {
         if discoverViewModel.isSearchBarActive == true {
             List(discoverViewModel.filteredItems) {
                 item in
-                VStack {
-                    Text(item.title)
+                Text(item.title)
+                    .onTapGesture {
+                    discoverViewModel.saveInCoreData(view: item)
                 }
             }
             

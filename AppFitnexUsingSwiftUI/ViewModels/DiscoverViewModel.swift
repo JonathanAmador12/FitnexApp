@@ -49,4 +49,8 @@ class DiscoverViewModel: ObservableObject {
         }
     }
     
+    func saveInCoreData(view: HomeViewPictures) -> Void {
+        CoreDataViewModel.shared.addNewQuery(title: view.title)
+    }
+    
 }

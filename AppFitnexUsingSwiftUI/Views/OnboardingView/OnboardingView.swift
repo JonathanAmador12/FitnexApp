@@ -16,7 +16,7 @@ struct OnboardingView: View {
         OnboardingItem(id: 3, image: UIImage(named: "imageThree")!, message: "Let's do a workout and live healthy with us")
     ]
 
-    @State private var currentPageIndex = 1
+    @State private var currentPageIndex = 2
 
     var body: some View {
         VStack {

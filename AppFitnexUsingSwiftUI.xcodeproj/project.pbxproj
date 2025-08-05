@@ -60,6 +60,8 @@
 		B48F6BFB2B02F4EC005BA149 /* ResetCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F6BFA2B02F4EC005BA149 /* ResetCodeView.swift */; };
 		B48FFD222B239CAD007A5F2D /* backgroundGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48FFD212B239CAD007A5F2D /* backgroundGrey.swift */; };
 		B490C3172B2924C2000646A2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B490C3162B2924C2000646A2 /* HomeView.swift */; };
+		B499CE572D149954009DB7F5 /* Models.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B499CE552D149954009DB7F5 /* Models.xcdatamodeld */; };
+		B499CE5A2D149F5A009DB7F5 /* CoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B499CE592D149F5A009DB7F5 /* CoreDataViewModel.swift */; };
 		B4A82F7C2CEB233A0065269A /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A82F7B2CEB233A0065269A /* SearchBarView.swift */; };
 		B4B3092E2AE19CAC00D97711 /* WeightSelectedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B3092D2AE19CAC00D97711 /* WeightSelectedRow.swift */; };
 		B4B595152ADF000E00A59559 /* WeightSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B595142ADF000E00A59559 /* WeightSelectionDelegate.swift */; };
@@ -158,6 +160,8 @@
 		B48F6BFA2B02F4EC005BA149 /* ResetCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetCodeView.swift; sourceTree = "<group>"; };
 		B48FFD212B239CAD007A5F2D /* backgroundGrey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backgroundGrey.swift; sourceTree = "<group>"; };
 		B490C3162B2924C2000646A2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B499CE562D149954009DB7F5 /* Models.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Models.xcdatamodel; sourceTree = "<group>"; };
+		B499CE592D149F5A009DB7F5 /* CoreDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewModel.swift; sourceTree = "<group>"; };
 		B4A82F7B2CEB233A0065269A /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		B4B3092D2AE19CAC00D97711 /* WeightSelectedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightSelectedRow.swift; sourceTree = "<group>"; };
 		B4B595142ADF000E00A59559 /* WeightSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightSelectionDelegate.swift; sourceTree = "<group>"; };
@@ -255,6 +259,8 @@
 				B417DAC72A8860A600A05C95 /* Assets.xcassets */,
 				B417DAC92A8860A600A05C95 /* Preview Content */,
 				B47B3ED72CBF72450097E03A /* LaunchScreenThree.storyboard */,
+				B499CE552D149954009DB7F5 /* Models.xcdatamodeld */,
+				B499CE592D149F5A009DB7F5 /* CoreDataViewModel.swift */,
 			);
 			path = AppFitnexUsingSwiftUI;
 			sourceTree = "<group>";
@@ -688,6 +694,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B42394152A8C0A0D007BD9F1 /* SignInView.swift in Sources */,
+				B499CE5A2D149F5A009DB7F5 /* CoreDataViewModel.swift in Sources */,
 				B45419042ADCC12D00162816 /* CustomPickerWeightViewController.swift in Sources */,
 				B4F1F1452AE30DA200276211 /* HeightUserView.swift in Sources */,
 				B40EFABF2AE7362E0074D0FE /* ProfileUserView.swift in Sources */,
@@ -750,6 +757,7 @@
 				B41C62D72B3CF00D0008CF22 /* SearchBar.swift in Sources */,
 				B4CA4B742A8B10CD00592575 /* OnboardingItem.swift in Sources */,
 				B41B8D942AA029260021FF97 /* TextInputToggleView.swift in Sources */,
+				B499CE572D149954009DB7F5 /* Models.xcdatamodeld in Sources */,
 				B417DAD52A88633A00A05C95 /* OnboardingItemView.swift in Sources */,
 				B433E0342B2E7243007EB1BE /* WorkoutLabelSubView.swift in Sources */,
 				B4281A172AEAE881006BA8DE /* PickerView.swift in Sources */,
@@ -917,6 +925,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreenThree;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -948,6 +957,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreenThree;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1041,6 +1051,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B499CE552D149954009DB7F5 /* Models.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B499CE562D149954009DB7F5 /* Models.xcdatamodel */,
+			);
+			currentVersion = B499CE562D149954009DB7F5 /* Models.xcdatamodel */;
+			path = Models.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B417DAB82A8860A500A05C95 /* Project object */;
 }
